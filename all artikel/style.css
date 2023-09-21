@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #ffffe8;
+}
+.navbar {
+  background-color: #800000;
+}
+main {
+  margin-top: 80px;
+  min-height: 100vh;
+}

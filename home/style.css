@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #ffffe8;
+}
+.navbar {
+  background-color: #800000;
+}
+main{
+  margin-top: 80px;
+  min-height: 90vh;
+}
+.carousel-item img {
+  height: 600px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
+  object-fit: cover; /* Untuk memastikan gambar tetap terlihat baik meskipun memiliki rasio aspek yang berbeda */
+  border-radius: 10px;
+}
+.custom-carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.custom-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.custom-indicator.active {
+  background-color: #800000;
+}
+#jumbotron {
+  background-color: #800000;
+}
+.jumbotron-img {
+  height: 500px;
+}
+.card img {
+  max-height: 200px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
+  object-fit: cover;
+}
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+  }
+  .jumbotron-img {
+    height: 400px;
+  }
+}
