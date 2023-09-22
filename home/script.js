@@ -1,3 +1,29 @@
+$(document).ready(function () {
+  var owl = $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  });
+
+  // Menghubungkan tombol prev dan next ke slider
+  $(".custom-prev").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
+
+  $(".custom-next").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
+});
 // Menentukan jumlah slide
 var totalSlides = document.querySelectorAll(
   ".carousel-inner .carousel-item"
