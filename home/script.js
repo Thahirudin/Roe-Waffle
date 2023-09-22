@@ -67,3 +67,19 @@ carousel.addEventListener("slid.bs.carousel", function () {
   );
   activeIndicator.classList.add("active");
 });
+function hidePreloader() {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("content");
+  const nav = document.getElementById("nav");
+  const footer = document.getElementById("footer");
+  preloader.style.display = "none";
+  content.style.display = "block";
+  nav.style.display = "block";
+  footer.style.display = "block";
+}
+
+// Event listener untuk mendeteksi saat halaman telah dimuat sepenuhnya
+window.addEventListener("load", () => {
+  // Tunda pemanggilan hidePreloader selama minimal 3 detik (3000 milidetik)
+  setTimeout(hidePreloader, 3000);
+});
