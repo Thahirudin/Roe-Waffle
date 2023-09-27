@@ -43,20 +43,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item search-box px-0 mr-1 mr-md-2" id="search-box-mobile">
-              <a onclick="openInputMobile()" id="button-open-mobile" class="search-btn p-2 mr-1 mr-md-0 justify-content-center align-items-center shadow-sm d-inline">
-                <i style="color: #ffffe8;" class="fa fa-search" aria-hidden="true"></i>
-              </a>
-            </li>
-            
-            <div id="search-input-mobile" style="display: none;">
-              <form>
-                <input type="text" id="search-bar-mobile" placeholder="Ketik kata kunci">
-                <button type="button" onclick="searchMobile()">Cari</button>
-              </form>
-            </div>
-
+          <ul class="navbar-nav ms-auto justify-content-center align-items-center">
             <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
             <li class="nav-item">
               <a
@@ -86,6 +73,19 @@
                 >Ulasan</a
               >
             </li>
+            <li class="nav-item search-box px-0 mr-1 mr-md-2" id="search-box-mobile">
+              <div class="d-flex ">
+                <a onclick="openInputMobile()" id="button-open-mobile" class="search-btn p-2 mr-1 mr-md-0 shadow-sm d-inline">
+                <i style="color: #800000; background-color: #ffffff;" class="fa fa-search p-2 rounded-circle" aria-hidden="true"></i>
+              </a>
+              </div>
+            </li>
+            <div id="search-input-mobile" style="display: none;" class="me-3">
+              <form>
+                <input type="text" id="search-bar-mobile" placeholder="Ketik kata kunci">
+                <button type="button" onclick="searchMobile()">Cari</button>
+              </form>
+            </div>
           </ul>
           <button class="btn btn-success">Login</button>
         </div>
