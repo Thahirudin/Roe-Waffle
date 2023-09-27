@@ -13,3 +13,54 @@ main {
   margin-top: 80px;
   min-height: 100vh;
 }
+.search-input {
+  display: none;
+}
+
+@media (max-width: 768px) {
+#button-open-mobile {
+  padding: 10px; 
+  }
+}
+form button {
+  background-color: #ffffe8;
+}
+#search-input-mobile {
+  display: block;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px; 
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: auto;
+}
+
+#search-bar-mobile {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+#search-bar-mobile::placeholder {
+  color: #888;
+}
+
+#search-bar-mobile:focus {
+  border: 2px solid #800000; 
+}
+
+button[type="button"] {
+  background-color: #800000; 
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+button[type="button"]:hover {
+  background-color: #ff6347;
+}
