@@ -74,7 +74,6 @@ function hidePreloader() {
   const footer = document.getElementById("footer");
   preloader.style.display = "none";
   content.style.display = "block";
-  nav.style.display = "block";
   footer.style.display = "block";
 }
 
