@@ -161,6 +161,51 @@ main {
 #footer {
   display: none;
 }
+#search-input {
+  display: block;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 5px; 
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  width: auto;
+}
+
+#search-bar-mobile {
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+#search-bar-mobile::placeholder {
+  color: #888;
+}
+
+#search-bar-mobile:focus {
+  border: 2px solid #800000; 
+}
+
+nav button[type="button"] {
+  background-color: #800000; 
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+nav button[type="button"]:hover {
+  background-color: #ff6347;
+}
+form button {
+  background-color: #ffffe8;
+}
+.search-input {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   .carousel-item img {
     height: 200px;
