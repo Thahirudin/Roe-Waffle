@@ -93,30 +93,17 @@
               class="nav-item search-box px-0 mr-1 mr-md-2"
               id="search-box-mobile"
             >
-              <div class="d-flex">
-                <a
-                  onclick="openInput()"
-                  id="button-open-mobile"
-                  class="search-btn p-2 mr-1 mr-md-0 shadow-sm d-inline"
-                >
-                  <i
-                    style="color: #800000; background-color: #ffffff"
-                    class="fa fa-search p-2 rounded-circle"
-                    aria-hidden="true"
-                  ></i>
-                </a>
+              <div id="search-input" class="me-3">
+                <form id="form">
+                  <input
+                    type="text"
+                    id="search-bar-mobile"
+                    placeholder="Ketik kata kunci"
+                  />
+                  <button type="button" onclick="searchInput()">Cari</button>
+                </form>
               </div>
             </li>
-            <div id="search-input" style="display: none" class="me-3">
-              <form>
-                <input
-                  type="text"
-                  id="search-bar-mobile"
-                  placeholder="Ketik kata kunci"
-                />
-                <button type="button" onclick="searchInput()">Cari</button>
-              </form>
-            </div>
           </ul>
           <button class="btn btn-success">Login</button>
         </div>
@@ -593,9 +580,11 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+            <div>
+              <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel" style="color: #800000;">
               Choco Devil
             </h1>
+            </div>
             <button
               type="button"
               class="btn-close"

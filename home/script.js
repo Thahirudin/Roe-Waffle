@@ -74,6 +74,7 @@ function hidePreloader() {
   const footer = document.getElementById("footer");
   preloader.style.display = "none";
   content.style.display = "block";
+  nav.style.display = "block";
   footer.style.display = "block";
 }
 
@@ -82,19 +83,3 @@ window.addEventListener("load", () => {
   // Tunda pemanggilan hidePreloader selama minimal 3 detik (3000 milidetik)
   setTimeout(hidePreloader, 3000);
 });
-function openInput() {
-  var searchInputMobile = document.getElementById("search-input");
-  if (
-    searchInputMobile.style.display === "none" ||
-    searchInputMobile.style.display === ""
-  ) {
-    searchInputMobile.style.display = "block";
-  } else {
-    searchInputMobile.style.display = "none";
-  }
-}
-
-function searchInput() {
-  var keyword = document.getElementById("search-bar-mobile").value;
-  window.location.href = "search.html?keyword=" + keyword;
-}
