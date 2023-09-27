@@ -17,15 +17,10 @@ main {
   display: none;
 }
 
-@media (max-width: 768px) {
-#button-open-mobile {
-  padding: 10px; 
-  }
+#nav {
+  display: none;
 }
-form button {
-  background-color: #ffffe8;
-}
-#search-input-mobile {
+#search-input {
   display: block;
   background-color: #fff;
   border-radius: 20px;
@@ -42,7 +37,6 @@ form button {
   border-radius: 20px;
   width: 70%;
 }
-
 #search-bar-mobile::placeholder {
   color: #888;
 }
@@ -51,7 +45,7 @@ form button {
   border: 2px solid #800000; 
 }
 
-button[type="button"] {
+nav button[type="button"] {
   background-color: #800000; 
   border: none;
   border-radius: 20px;
@@ -60,7 +54,12 @@ button[type="button"] {
   cursor: pointer;
   transition: background-color 0.3s ease; 
 }
-
-button[type="button"]:hover {
-  background-color: #ff6347;
+nav button[type="button"]:hover {
+  background-color: #ff6347;
+}
+form button {
+  background-color: #ffffe8;
+}
+.search-input {
+  display: none;
 }
