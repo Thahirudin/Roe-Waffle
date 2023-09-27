@@ -25,6 +25,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <section id="preloader">
@@ -34,7 +38,7 @@
         <div class="preloader__dot"></div>
       </div>
     </section>
-    <nav class="navbar navbar-expand-lg mb-3 fixed-top" id="nav">
+    <nav class="navbar navbar-expand-lg mb-3 fixed-top">
       <div class="container">
         <a
           class="navbar-brand fw-bold link-light link-opacity-75-hover"
@@ -53,7 +57,9 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
+          <ul
+            class="navbar-nav ms-auto justify-content-center align-items-center"
+          >
             <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
             <li class="nav-item">
               <a
@@ -83,6 +89,34 @@
                 >Ulasan</a
               >
             </li>
+            <li
+              class="nav-item search-box px-0 mr-1 mr-md-2"
+              id="search-box-mobile"
+            >
+              <div class="d-flex">
+                <a
+                  onclick="openInput()"
+                  id="button-open-mobile"
+                  class="search-btn p-2 mr-1 mr-md-0 shadow-sm d-inline"
+                >
+                  <i
+                    style="color: #800000; background-color: #ffffff"
+                    class="fa fa-search p-2 rounded-circle"
+                    aria-hidden="true"
+                  ></i>
+                </a>
+              </div>
+            </li>
+            <div id="search-input" style="display: none" class="me-3">
+              <form>
+                <input
+                  type="text"
+                  id="search-bar-mobile"
+                  placeholder="Ketik kata kunci"
+                />
+                <button type="button" onclick="searchInput()">Cari</button>
+              </form>
+            </div>
           </ul>
           <button class="btn btn-success">Login</button>
         </div>
@@ -559,7 +593,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Choco Devil</h1>
+            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+              Choco Devil
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -597,7 +633,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Sweetie Berry</h1>
+            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+              Sweetie Berry
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -635,7 +673,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Say Cheese</h1>
+            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+              Say Cheese
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -673,7 +713,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Cookies n Cream</h1>
+            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+              Cookies n Cream
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -711,7 +753,9 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">Nutella Bomb</h1>
+            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+              Nutella Bomb
+            </h1>
             <button
               type="button"
               class="btn-close"
@@ -781,7 +825,10 @@
                   <span class="text-white fw-bold"> MARI TERHUBUNG</span>
                 </div>
                 <div>
-                  <a href="https://www.instagram.com/roewaffle.pku/" target="_blank" class="background-color"
+                  <a
+                    href="https://www.instagram.com/roewaffle.pku/"
+                    target="_blank"
+                    class="background-color"
                     ><img
                       src="img/Instagram Circle (1).png"
                       alt="instagram"
