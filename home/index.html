@@ -34,6 +34,13 @@
     />
   </head>
   <body>
+    <section id="preloader">
+      <div class="three-body">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+      </div>
+    </section>
     <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
       <div class="container">
         <a
@@ -76,12 +83,20 @@
                 >Produk</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
-                class="nav-link fw-bold link-light link-opacity-75-hover"
-                href=""
-                >Ulasan</a
+                class="nav-link fw-bold link-light link-opacity-75-hover dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item fw-bold" href="/tentang kami/">Tentang Kami</a></li>
+                <li><a class="dropdown-item fw-bold" href="/kontak/">Kontak</a></li>
+              </ul>
             </li>
             <li class="me-3">
               <div>
@@ -106,11 +121,10 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-success">Login</button>
+          <button class="btn btn-success fw-bold">Login</button>
         </div>
       </div>
     </nav>
-
     <main id="content">
       <section id="carousel" class="mb-4 pt-4">
         <div
@@ -189,7 +203,7 @@
               </div>
             </div>
             <div class="col-md-4 order-0 order-md-1">
-              <div class="jumbotron-img text-center text-md-end">
+              <div class="jumbotron-img text-center text-md-end px-4 px-md-0">
                 <img class="img-fluid w-100" src="img/owner.png" alt="" />
               </div>
             </div>
@@ -886,14 +900,7 @@
         </div>
       </div>
     </section>
-    <section id="preloader">
-      <div class="three-body">
-        <div class="three-body__dot"></div>
-        <div class="three-body__dot"></div>
-        <div class="three-body__dot"></div>
-      </div>
-    </section>
-    <footer>
+   <footer>
       <section id="footer">
         <div style="background-color: #800000">
           <div class="container py-5">
@@ -904,13 +911,7 @@
                 </div>
                 <div>
                   <span class="text-white"
-                    >Usaha ini adalah ingin mengenalkan Jajanan luar yang telah
-                    disukai banyak kalangan di Indonesia. Saat ini waffle
-                    menjadi salah satu makanan populer dan memiliki pangsa pasar
-                    yang luas. Rasanya nikmat sebagai menu camilan, memiliki
-                    tekstur yang sama dengan kue dan penyajiannya diberi
-                    tambahan berbagai macam topping sehingga menghasilkan rasa
-                    waffle yang nikmat.
+                    >Ide Awal kami membangun Usaha ini adalah ingin mengenalkan Jajanan luar yang telah disukai banyak kalangan di Indonesia. Saat ini waffle menjadi salah satu makanan populer dan memiliki pangsa pasar yang luas. Rasanya nikmat sebagai menu camilan, memiliki tekstur yang sama dengan kue dan penyajiannya diberi tambahan berbagai macam topping sehingga menghasilkan rasa waffle yang nikmat.     
                   </span>
                 </div>
               </div>

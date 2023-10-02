@@ -18,7 +18,9 @@ body {
 .navbar {
   background-color: $primary;
 }
-
+.navbar .dropdown-item:hover{
+  color: $primary;
+}
 main {
   margin-top: 80px;
   min-height: 90vh;

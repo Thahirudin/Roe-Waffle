@@ -4,12 +4,42 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: #ffffe8;
+  background-image: url("img/background.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
 .navbar {
   background-color: #800000;
 }
+.navbar .dropdown-item:hover {
+  color: #800000;
+}
 main {
   margin-top: 80px;
   min-height: 100vh;
+}
+#footer .icon a {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
+}
+
+#footer .icon a:hover {
+  background-color: #570000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }

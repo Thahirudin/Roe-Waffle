@@ -4,51 +4,45 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: #ffffe8;
+  background-color: white;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
 }
 .navbar {
   background-color: #800000;
+}
+
+.navbar .dropdown-item:hover {
+  color: #800000;
 }
 main {
   margin-top: 80px;
   min-height: 100vh;
 }
-#search-input {
-  display: block;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 5px; 
-  text-align: center;
-  width: auto;
+#footer .icon a {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
 }
 
-#search-bar-mobile {
-  border: none;
-  outline: none;
-  padding: 5px;
-  border-radius: 20px;
-  width: 70%;
-}
-
-#search-bar-mobile::placeholder {
-  color: #888;
-}
-
-nav button[type="button"] {
-  background-color: #800000; 
-  border: none;
-  border-radius: 20px;
-  padding: 5px 10px;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-}
-
-nav button[type="button"]:hover {
-  background-color: #ff6347;
-}
-form button {
-  background-color: #ffffe8;
+#footer .icon a:hover {
+  background-color: #570000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
 *{
@@ -56,11 +50,6 @@ form button {
   padding:0;
   box-sizing:border-box;
   font-family:'Playfair Display', sans-serif;
-}
-body{
-  background-color: #fff;
-  background-position:right;
-  background-attachment:fixed;
 }
 
 #header{
