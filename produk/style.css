@@ -13,25 +13,12 @@ main {
   margin-top: 80px;
   min-height: 100vh;
 }
-.search-input {
-  display: none;
-}
-
-@media (max-width: 768px) {
-#button-open-mobile {
-  padding: 10px; 
-  }
-}
-form button {
-  background-color: #ffffe8;
-}
-#search-input-mobile {
+#search-input {
   display: block;
   background-color: #fff;
   border-radius: 20px;
   padding: 5px; 
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   width: auto;
 }
 
@@ -47,11 +34,7 @@ form button {
   color: #888;
 }
 
-#search-bar-mobile:focus {
-  border: 2px solid #800000; 
-}
-
-button[type="button"] {
+nav button[type="button"] {
   background-color: #800000; 
   border: none;
   border-radius: 20px;
@@ -61,8 +44,11 @@ button[type="button"] {
   transition: background-color 0.3s ease; 
 }
 
-button[type="button"]:hover {
+nav button[type="button"]:hover {
   background-color: #ff6347;
+}
+form button {
+  background-color: #ffffe8;
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
 *{
