@@ -23,7 +23,7 @@ $(document).ready(function () {
   showPreloader();
 
   // Setelah 3 detik, sembunyikan preloader
-  setTimeout(hidePreloader, 3000);
+  setTimeout(hidePreloader, 1500);
 });
 
 function initializeCarousel() {
