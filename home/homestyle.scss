@@ -1,13 +1,14 @@
+$primary : #800000;
 * {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: #ffffe8;
+  background-image: url("img/background.png");
 }
 .navbar {
-  background-color: #800000;
+  background-color: $primary;
 }
 main {
   margin-top: 80px;
@@ -34,13 +35,10 @@ main {
 }
 
 .custom-indicator.active {
-  background-color: #800000;
+  background-color: $primary;
 }
 #jumbotron {
-  background-color: #800000;
-}
-.jumbotron-img {
-  height: 500px;
+  background-color: $primary;
 }
 .card img {
   max-height: 200px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
@@ -62,7 +60,7 @@ main {
 .preloader {
   --uib-size: 100px; /* Ubah ukuran loading di sini */
   --uib-speed: 1.1s;
-  --uib-color: #800000;
+  --uib-color: $primary;
   position: relative;
   display: inline-block;
   height: var(--uib-size);
@@ -158,47 +156,32 @@ main {
     opacity: 0.8;
   }
 }
-#nav,
+/* #nav,
 #content,
 #footer {
   display: none;
+} */
+.icon a{
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  text-decoration: none;
 }
-#search-input {
-  display: block;
-  background-color: #fff;
-  border-radius: 20px;
-  padding: 5px; 
-  text-align: center;
-  width: auto;
-}
-
-#search-bar-mobile {
-  border: none;
-  outline: none;
-  padding: 5px;
-  border-radius: 20px;
-  width: 70%;
-}
-
-#search-bar-mobile::placeholder {
-  color: #888;
-}
-
-nav button[type="button"] {
-  background-color: #800000; 
-  border: none;
-  border-radius: 20px;
-  padding: 5px 10px;
-  color: #fff;
-  cursor: pointer;
-  transition: background-color 0.3s ease; 
-}
-
-nav button[type="button"]:hover {
-  background-color: #ff6347;
-}
-form button {
-  background-color: #ffffe8;
+.icon a:hover{
+  background-color: #570000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   .carousel-item img {

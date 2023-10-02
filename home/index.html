@@ -24,21 +24,24 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="homestyle.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
-    <section id="preloader">
+    <!-- <section id="preloader">
       <div class="preloader">
         <div class="preloader__dot"></div>
         <div class="preloader__dot"></div>
         <div class="preloader__dot"></div>
       </div>
-    </section>
-    <nav class="navbar navbar-expand-lg mb-3 fixed-top">
+    </section> -->
+    <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
       <div class="container">
         <a
           class="navbar-brand fw-bold link-light link-opacity-75-hover"
@@ -64,43 +67,50 @@
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="#"
+                href="/home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="#"
+                href="/all artikel/"
                 >Postingan</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="#"
+                href="/produk/"
                 >Produk</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="#"
+                href=""
                 >Ulasan</a
               >
             </li>
-            <li
-              class="nav-item search-box px-0 mr-1 mr-md-2"
-              id="search-box-mobile"
-            >
-              <div id="search-input" class="me-3">
-                <form id="form">
-                  <input
-                    type="text"
-                    id="search-bar-mobile"
-                    placeholder="Ketik kata kunci"
-                  />
-                  <button type="button" onclick="searchInput()">Cari</button>
+            <li class="me-3">
+              <div>
+                <form action="" class="d-flex">
+                  <div class="input-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Masukkan Kata Kunci"
+                    />
+                    <button
+                      class="btn"
+                      style="color: white; background-color: #222"
+                      type="button"
+                      id="searchButton"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
                 </form>
               </div>
             </li>
@@ -165,8 +175,8 @@
           ></div>
         </div>
       </section>
-      <section id="jumbotron" class="mb-3 p-3">
-        <div class="container jumbotron rounded">
+      <section id="jumbotron" class="mb-3">
+        <div class="container jumbotron">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-7 order-1 order-md-0">
               <div>
@@ -176,16 +186,19 @@
               </div>
               <div>
                 <span class="text-white">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-                  corporis, atque voluptas amet saepe consectetur temporibus
-                  minus aliquam doloribus error sit voluptatum ipsam sequi. Iste
-                  sit accusantium consectetur aliquid minima!
+                  Ide Awal kami membangun Usaha ini adalah ingin mengenalkan
+                  Jajanan luar yang telah disukai banyak kalangan di Indonesia.
+                  Saat ini waffle menjadi salah satu makanan populer dan
+                  memiliki pangsa pasar yang luas. Rasanya nikmat sebagai menu
+                  camilan, memiliki tekstur yang sama dengan kue dan
+                  penyajiannya diberi tambahan berbagai macam topping sehingga
+                  menghasilkan rasa waffle yang nikmat.
                 </span>
               </div>
             </div>
             <div class="col-md-4 order-0 order-md-1">
               <div class="jumbotron-img text-center text-md-end">
-                <img class="h-100" src="img/owner.png" alt="" />
+                <img class="w-100" src="img/owner.png" alt="" />
               </div>
             </div>
           </div>
@@ -357,19 +370,26 @@
                         class="card-footer d-flex justify-content-center bg-white border-top-0"
                       >
                         <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
                         </div>
                       </div>
                     </div>
@@ -397,19 +417,26 @@
                         class="card-footer d-flex justify-content-center bg-white border-top-0"
                       >
                         <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
                         </div>
                       </div>
                     </div>
@@ -437,19 +464,26 @@
                         class="card-footer d-flex justify-content-center bg-white border-top-0"
                       >
                         <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-regular fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
                         </div>
                       </div>
                     </div>
@@ -477,19 +511,26 @@
                         class="card-footer d-flex justify-content-center bg-white border-top-0"
                       >
                         <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
                         </div>
                       </div>
                     </div>
@@ -517,16 +558,26 @@
                         class="card-footer d-flex justify-content-center bg-white border-top-0"
                       >
                         <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
-                        </div>
-                        <div>
-                          <img src="img/Bintang.png" style="width: 40px" />
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-solid fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
+                          <i
+                            class="fa-regular fa-star fa-xl"
+                            style="color: #ffb803"
+                          ></i>
                         </div>
                       </div>
                     </div>
@@ -544,17 +595,19 @@
         </div>
       </section>
       <section>
-        <div class="kontak container my-3">
+        <div class="kontak container mt-3">
           <div class="text-center mb-3">
             <h2 class="fs-2 fw-bold" style="color: #800000">KONTAK</h2>
           </div>
           <div class="row align-items-center justify-content-between">
             <div class="col-md-6 order-1 order-md-0">
               <div>
-                <span class="fs-3 fw-bold" style="color: #800000"
+                <span class="fs-3 fw-bolder" style="color: #800000"
                   >KAMU ADA PERTANYAAN?</span
                 >
-                <p>Silahkan Hubungi Kontak Yang Ada Dibawah Ini yah</p>
+                <p class="fw-semibold">
+                  Silahkan Hubungi Kontak Yang Ada Dibawah Ini yah
+                </p>
               </div>
               <div class="d-flex">
                 <button class="btn btn-success text-center w-100">
@@ -569,208 +622,270 @@
         </div>
       </section>
     </main>
-    <!-- Modal Menu 1-->
-    <div
-      class="modal fade"
-      id="menu1"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div>
-              <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel" style="color: #800000;">
-              Choco Devil
-            </h1>
+    <section>
+      <!-- Modal Menu 1-->
+      <div
+        class="modal fade"
+        id="menu1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <h1
+                  class="modal-title fs-2 fw-bold"
+                  id="exampleModalLabel"
+                  style="color: #800000"
+                >
+                  Choco Devil
+                </h1>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <ul class="fw-semibold">
-              <li>Topping chocolate</li>
-              <li>Ice Cream chocolate</li>
-              <li>Chocolate Syrup</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Menu 2-->
-    <div
-      class="modal fade"
-      id="menu2"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
-              Sweetie Berry
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body fw-semibold">
-            <ul>
-              <li>Topping Strawberry</li>
-              <li>Ice Cream Strawberry</li>
-              <li>Strawberry Syrup</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <div
+              class=""
+              style="
+                width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+                height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+                background-image: url('img/download1.jfif'); /* Ganti dengan path gambar yang sesuai */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50%;
+              "
+            ></div>
+            <div class="modal-body">
+              <ul class="fw-semibold">
+                <li>Topping chocolate</li>
+                <li>Ice Cream chocolate</li>
+                <li>Chocolate Syrup</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal Menu 3-->
-    <div
-      class="modal fade"
-      id="menu3"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
-              Say Cheese
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body fw-semibold">
-            <ul>
-              <li>Topping Cheese</li>
-              <li>Ice Cream Vanilla</li>
-              <li>Caramel Syrup</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Modal Menu 4-->
-    <div
-      class="modal fade"
-      id="menu4"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
-              Cookies n Cream
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body fw-semibold">
-            <ul>
-              <li>Topping Oreo</li>
-              <li>Ice Cream Vanilla</li>
-              <li>Oreo Crumbs</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+      <!-- Modal Menu 2-->
+      <div
+        class="modal fade"
+        id="menu2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+                Sweetie Berry
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class=""
+              style="
+                width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+                height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+                background-image: url('img/download3.jfif'); /* Ganti dengan path gambar yang sesuai */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50%;
+              "
+            ></div>
+            <div class="modal-body fw-semibold">
+              <ul>
+                <li>Topping Strawberry</li>
+                <li>Ice Cream Strawberry</li>
+                <li>Strawberry Syrup</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Modal Menu 5-->
-    <div
-      class="modal fade"
-      id="menu5"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
-              Nutella Bomb
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body fw-semibold">
-            <ul>
-              <li>Topping Nutella</li>
-              <li>Ice Cream Vanilla</li>
-              <li>Chocolate Syrup</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+      <!-- Modal Menu 3-->
+      <div
+        class="modal fade"
+        id="menu3"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+                Say Cheese
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class=""
+              style="
+                width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+                height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+                background-image: url('img/download4.jfif'); /* Ganti dengan path gambar yang sesuai */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50%;
+              "
+            ></div>
+            <div class="modal-body fw-semibold">
+              <ul>
+                <li>Topping Cheese</li>
+                <li>Ice Cream Vanilla</li>
+                <li>Caramel Syrup</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <!-- Modal Menu 4-->
+      <div
+        class="modal fade"
+        id="menu4"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+                Cookies n Cream
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class=""
+              style="
+                width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+                height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+                background-image: url('img/download4.jfif'); /* Ganti dengan path gambar yang sesuai */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50%;
+              "
+            ></div>
+            <div class="modal-body fw-semibold">
+              <ul>
+                <li>Topping Oreo</li>
+                <li>Ice Cream Vanilla</li>
+                <li>Oreo Crumbs</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Menu 5-->
+      <div
+        class="modal fade"
+        id="menu5"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-2 fw-bold" id="exampleModalLabel">
+                Nutella Bomb
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div
+              class=""
+              style="
+                width: 100%; /* Sesuaikan dengan lebar yang Anda inginkan */
+                height: 200px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+                background-image: url('img/download4.jfif'); /* Ganti dengan path gambar yang sesuai */
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 50%;
+              "
+            ></div>
+            <div class="modal-body fw-semibold">
+              <ul>
+                <li>Topping Nutella</li>
+                <li>Ice Cream Vanilla</li>
+                <li>Chocolate Syrup</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <section id="footer">
         <div style="background-color: #800000">
@@ -782,12 +897,14 @@
                 </div>
                 <div>
                   <span class="text-white"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eaque corporis, atque voluptas amet saepe consectetur
-                    temporibus minus aliquam doloribus error sit voluptatum
-                    ipsam sequi. Iste sit accusantium consectetur aliquid
-                    minima!</span
-                  >
+                    >Usaha ini adalah ingin mengenalkan Jajanan luar yang telah
+                    disukai banyak kalangan di Indonesia. Saat ini waffle
+                    menjadi salah satu makanan populer dan memiliki pangsa pasar
+                    yang luas. Rasanya nikmat sebagai menu camilan, memiliki
+                    tekstur yang sama dengan kue dan penyajiannya diberi
+                    tambahan berbagai macam topping sehingga menghasilkan rasa
+                    waffle yang nikmat.
+                  </span>
                 </div>
               </div>
               <div class="col-md-2">
@@ -813,16 +930,36 @@
                 <div>
                   <span class="text-white fw-bold"> MARI TERHUBUNG</span>
                 </div>
-                <div>
-                  <a
-                    href="https://www.instagram.com/roewaffle.pku/"
-                    target="_blank"
-                    class="background-color"
-                    ><img
-                      src="img/Instagram Circle (1).png"
-                      alt="instagram"
-                      width="42px"
-                  /></a>
+                <div class="d-flex gap-3" >
+                  <div class="icon"
+                  >
+                    <a
+                      href="https://www.instagram.com/roewaffle.pku/"
+                      target="_blank"
+                    >
+                      <i
+                        class="fa-brands fa-xl fa-instagram"
+                      ></i>
+                    </a>
+                  </div>
+                  <div class="icon"
+                  >
+                    <a
+                      href="https://www.instagram.com/roewaffle.pku/"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </div>
+                  <div class="icon"
+                  >
+                    <a
+                      href="https://www.instagram.com/roewaffle.pku/"
+                      target="_blank"
+                    >
+                      <i class="fa-brands fa-whatsapp fa-lg"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
