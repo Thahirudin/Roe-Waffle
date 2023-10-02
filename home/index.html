@@ -34,13 +34,6 @@
     />
   </head>
   <body>
-    <!-- <section id="preloader">
-      <div class="preloader">
-        <div class="preloader__dot"></div>
-        <div class="preloader__dot"></div>
-        <div class="preloader__dot"></div>
-      </div>
-    </section> -->
     <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
       <div class="container">
         <a
@@ -60,9 +53,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul
-            class="navbar-nav ms-auto justify-content-center align-items-center"
-          >
+          <ul class="navbar-nav ms-auto justify-content-center">
             <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
             <li class="nav-item">
               <a
@@ -119,8 +110,9 @@
         </div>
       </div>
     </nav>
+
     <main id="content">
-      <section id="carousel" class="mb-3" style="margin-top: 70px">
+      <section id="carousel" class="mb-4 pt-4">
         <div
           id="carouselExampleIndicators"
           class="carousel slide container rounded"
@@ -175,7 +167,7 @@
           ></div>
         </div>
       </section>
-      <section id="jumbotron" class="mb-3">
+      <section id="jumbotron" class="mb-3 pb-3 pb-md-0">
         <div class="container jumbotron">
           <div class="row align-items-center justify-content-between">
             <div class="col-md-7 order-1 order-md-0">
@@ -198,7 +190,7 @@
             </div>
             <div class="col-md-4 order-0 order-md-1">
               <div class="jumbotron-img text-center text-md-end">
-                <img class="w-100" src="img/owner.png" alt="" />
+                <img class="img-fluid w-100" src="img/owner.png" alt="" />
               </div>
             </div>
           </div>
@@ -337,13 +329,17 @@
       </section>
       <section>
         <div class="ulasan" style="background-color: #800000" class="my-3">
-          <div class="container py-4">
+          <div class="container py-5">
             <div class="mb-3">
               <h2 class="text-white fw-bold text-center">ULASAN</h2>
             </div>
-            <div class="row">
-              <div class="col-2 custom-prev d-flex align-items-center">
-                <img src="img/prev-white.png" alt="" width="60%" />
+            <div class="row justify-content-between">
+              <div class="col-2 d-flex align-items-center">
+                <div class="custom-prev">
+                  <div class="angle">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </div>
+                </div>
               </div>
               <div class="col-8">
                 <div class="owl-carousel">
@@ -585,9 +581,11 @@
                   <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
                 </div>
               </div>
-              <div class="col-2 custom-next d-flex align-items-center">
-                <div class="text-end">
-                  <img src="img/next-white.png" alt="" width="60%" />
+              <div class="col-2 d-flex align-items-center justify-content-end">
+                <div class="custom-next">
+                  <div class="angle">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -595,12 +593,15 @@
         </div>
       </section>
       <section>
-        <div class="kontak container mt-3">
+        <div class="kontak container mt-4">
           <div class="text-center mb-3">
             <h2 class="fs-2 fw-bold" style="color: #800000">KONTAK</h2>
           </div>
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-6 order-1 order-md-0">
+            <div
+              class="col-md-6 order-1 order-md-0 rounded px-5 py-3 mb-3 shadow-sm"
+              style="background-color: white"
+            >
               <div>
                 <span class="fs-3 fw-bolder" style="color: #800000"
                   >KAMU ADA PERTANYAAN?</span
@@ -885,7 +886,13 @@
         </div>
       </div>
     </section>
-
+    <section id="preloader">
+      <div class="three-body">
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+        <div class="three-body__dot"></div>
+      </div>
+    </section>
     <footer>
       <section id="footer">
         <div style="background-color: #800000">
@@ -930,20 +937,16 @@
                 <div>
                   <span class="text-white fw-bold"> MARI TERHUBUNG</span>
                 </div>
-                <div class="d-flex gap-3" >
-                  <div class="icon"
-                  >
+                <div class="d-flex gap-3">
+                  <div class="icon">
                     <a
                       href="https://www.instagram.com/roewaffle.pku/"
                       target="_blank"
                     >
-                      <i
-                        class="fa-brands fa-xl fa-instagram"
-                      ></i>
+                      <i class="fa-brands fa-xl fa-instagram"></i>
                     </a>
                   </div>
-                  <div class="icon"
-                  >
+                  <div class="icon">
                     <a
                       href="https://www.instagram.com/roewaffle.pku/"
                       target="_blank"
@@ -951,8 +954,7 @@
                       <i class="fa-brands fa-facebook-f"></i>
                     </a>
                   </div>
-                  <div class="icon"
-                  >
+                  <div class="icon">
                     <a
                       href="https://www.instagram.com/roewaffle.pku/"
                       target="_blank"
