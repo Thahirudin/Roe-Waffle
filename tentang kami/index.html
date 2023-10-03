@@ -17,63 +17,90 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg mb-3 fixed-top">
-        <div class="container">
-          <a class="navbar-brand fw-bold link-light link-opacity-75-hover" href="#"><img src="img/logo.png" alt="" height="40"></a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold link-light link-opacity-75-hover"
-                  href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold link-light link-opacity-75-hover"
-                  href="#"
-                  >Postingan</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold link-light link-opacity-75-hover"
-                  href="#"
-                  >Produk</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link fw-bold link-light link-opacity-75-hover"
-                  href="#"
-                  >Ulasan</a
-                >
-              </li>
-              <li
-              class="nav-item search-box px-0 mr-1 mr-md-2"
-              id="search-box-mobile"
+  <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
+    <div class="container">
+      <a
+        class="navbar-brand fw-bold link-light link-opacity-75-hover"
+        href="/home"
+        ><img src="img/logo.png" alt="" height="40"
+      /></a>
+      <button
+        class="navbar-toggler bg-white"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto justify-content-center">
+          <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
+          <li class="nav-item">
+            <a
+              class="nav-link fw-bold link-light link-opacity-75-hover"
+              href="/home"
+              >Home</a
             >
-              <div id="search-input" class="me-3">
-                <form id="form">
-                  <input
-                    type="text"
-                    id="search-bar-mobile"
-                    placeholder="Ketik kata kunci"
-                  />
-                  <button type="button" onclick="searchInput()">Cari</button>
-                </form>
-              </div>
-            </li>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fw-bold link-light link-opacity-75-hover"
+              href="/all artikel/"
+              >Postingan</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link fw-bold link-light link-opacity-75-hover"
+              href="/produk/"
+              >Produk</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link fw-bold link-light link-opacity-75-hover dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Tentang
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item fw-bold" href="/tentang kami/">Tentang Kami</a></li>
+              <li><a class="dropdown-item fw-bold" href="/kontak/">Kontak</a></li>
             </ul>
-            <button class="btn btn-success">Login</button>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="me-3">
+            <div>
+              <form action="" class="d-flex">
+                <div class="input-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Masukkan Kata Kunci"
+                  />
+                  <button
+                    class="btn"
+                    style="color: white; background-color: #222"
+                    type="button"
+                    id="searchButton"
+                  >
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </li>
+        </ul>
+        <button class="btn btn-success fw-bold">Login</button>
+      </div>
+    </div>
+  </nav>
 
       <main>
         
@@ -326,25 +353,21 @@
       </main>
     
       <footer>
-        <section>
+        <section id="footer">
           <div style="background-color: #800000">
-            <div class="container py-3 py-md-5">
+            <div class="container py-5">
               <div class="row justify-content-between">
-                <div class="col-12 col-md-5">
+                <div class="col-md-5">
                   <div class="pb-2">
                     <span class="text-white fs-2 fw-bold">ROE WAFFLE</span>
                   </div>
                   <div>
                     <span class="text-white"
-                      >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eaque corporis, atque voluptas amet saepe consectetur
-                      temporibus minus aliquam doloribus error sit voluptatum
-                      ipsam sequi. Iste sit accusantium consectetur aliquid
-                      minima!</span
-                    >
+                      >Ide Awal kami membangun Usaha ini adalah ingin mengenalkan Jajanan luar yang telah disukai banyak kalangan di Indonesia. Saat ini waffle menjadi salah satu makanan populer dan memiliki pangsa pasar yang luas. Rasanya nikmat sebagai menu camilan, memiliki tekstur yang sama dengan kue dan penyajiannya diberi tambahan berbagai macam topping sehingga menghasilkan rasa waffle yang nikmat.     
+                    </span>
                   </div>
                 </div>
-                <div class="col-6 col-md-2 pt-3">
+                <div class="col-md-2">
                   <div class="pt-3">
                     <a
                       href=""
@@ -363,27 +386,43 @@
                     >
                   </div>
                 </div>
-                <div class="col-6 col-md-2 pt-3">
-                  <div class="pt-3">
+                <div class="col-md-2 pt-3">
                   <div>
                     <span class="text-white fw-bold"> MARI TERHUBUNG</span>
                   </div>
-                  <div>
-                    <a href="" class="background-color"
-                      ><img
-                        src="img/Instagram Circle (1).png"
-                        alt="instagram"
-                        width="42px"
-                    /></a>
+                  <div class="d-flex gap-3">
+                    <div class="icon">
+                      <a
+                        href="https://www.instagram.com/roewaffle.pku/"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-xl fa-instagram"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a
+                        href="https://www.instagram.com/roewaffle.pku/"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                    </div>
+                    <div class="icon">
+                      <a
+                        href="https://www.instagram.com/roewaffle.pku/"
+                        target="_blank"
+                      >
+                        <i class="fa-brands fa-whatsapp fa-lg"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              </div>
             </div>
           </div>
-          <div style="background-color: #222;">
+          <div style="background-color: #222">
             <div class="container text-center py-3">
-              <span class="text-white ">@All Right Reserved</span>
+              <span class="text-white fw-bold">@All Right Reserved</span>
             </div>
           </div>
         </section>
