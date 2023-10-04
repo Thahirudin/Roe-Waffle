@@ -50,6 +50,16 @@ main {
   background-color: #800000;
 }
 
+#carousel button {
+  background-color: transparent;
+  border: none;
+  transition: opacity 0.3s; /* Mengatur efek transisi perubahan opacity */
+}
+
+#carousel button:hover {
+  opacity: 0.7; /* Mengurangi opacity menjadi 0.7 saat dihover */
+}
+
 #jumbotron {
   background-color: rgba(128, 0, 0, 0.85);
 }
