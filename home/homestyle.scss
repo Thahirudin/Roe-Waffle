@@ -36,11 +36,14 @@ main {
   margin-top: 80px;
   min-height: 90vh;
 }
-
+.carousel-inner{
+  border-radius: 30px;
+}
 .carousel-item img {
+  width: 100%;
   height: 600px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
   object-fit: cover; /* Untuk memastikan gambar tetap terlihat baik meskipun memiliki rasio aspek yang berbeda */
-  border-radius: 10px;
+  
 }
 
 .custom-carousel-indicators {
@@ -52,7 +55,7 @@ main {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: #222;
   display: inline-block;
   margin-right: 5px;
   cursor: pointer;
@@ -60,15 +63,6 @@ main {
 
 .custom-indicator.active {
   background-color: $primary;
-}
-#carousel button {
-  background-color: transparent;
-  border: none;
-  transition: opacity 0.3s; /* Mengatur efek transisi perubahan opacity */
-}
-
-#carousel button:hover {
-  opacity: 0.7; /* Mengurangi opacity menjadi 0.7 saat dihover */
 }
 
 #jumbotron {
