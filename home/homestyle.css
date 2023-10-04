@@ -54,6 +54,10 @@ main {
   background-color: rgba(128, 0, 0, 0.85);
 }
 
+.ulasan {
+  background-color: rgba(128, 0, 0, 0.85);
+}
+
 .card img {
   max-height: 200px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
   object-fit: cover;
@@ -64,7 +68,7 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.icon a {
+#footer .icon a {
   background-color: white;
   width: 40px;
   height: 40px;
@@ -76,7 +80,7 @@ main {
   text-decoration: none;
 }
 
-.icon a:hover {
+#footer .icon a:hover {
   background-color: #570000;
   width: 40px;
   height: 40px;
