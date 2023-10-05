@@ -1,21 +1,20 @@
-// Variable Global dan Tipe Data
-$primary: #800000;
-$default-font: "Montserrat";
-
+@use 'warnadanfont';
+@import 'preloader';
 @function getBackgroundColor($bgColor) {
   @if $bgColor == "white" {
     @return rgba(255, 255, 255, 0.7);
   } @else if $bgColor == "primary" {
-    @return $primary;
+    @return warnadanfont.$primary;
   } @else {
     @return $bgColor;
   }
 }
-
+@import 'navbar';
+@import 'carousel';
 * {
   padding: 0;
   margin: 0;
-  font-family: $default-font, sans-serif;
+  font-family: warnadanfont.$default-font, sans-serif;
 }
 
 body {
@@ -25,46 +24,10 @@ body {
   background-position: center;
   height: 100vh;
 }
-
-.navbar {
-  background-color: $primary;
-}
-.navbar .dropdown-item:hover {
-  color: $primary;
-}
 main {
   margin-top: 80px;
   min-height: 90vh;
 }
-.carousel-inner{
-  border-radius: 30px;
-}
-.carousel-item img {
-  width: 100%;
-  height: 600px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
-  object-fit: cover; /* Untuk memastikan gambar tetap terlihat baik meskipun memiliki rasio aspek yang berbeda */
-  
-}
-
-.custom-carousel-indicators {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.custom-indicator {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #222;
-  display: inline-block;
-  margin-right: 5px;
-  cursor: pointer;
-}
-
-.custom-indicator.active {
-  background-color: $primary;
-}
-
 #jumbotron {
   background-color: getBackgroundColor(rgba(128, 0, 0, 0.85));
 }
@@ -77,7 +40,7 @@ main {
 }
 
 .card:hover {
-  color: $primary;
+  color: warnadanfont.$primary;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -129,130 +92,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $primary;
+  color: warnadanfont.$primary;
   text-decoration: none;
   font-size: 3rem;
 }
 .angle:hover {
   background-color: getAngleBackgroundColor(true);
-  color: $primary;
-}
-
-#preloader .three-body {
-  --uib-size: 100px;
-  --uib-speed: 1.1s;
-  --uib-color: #800000;
-
-  position: relative;
-  display: inline-block;
-  height: var(--uib-size);
-  width: var(--uib-size);
-  animation: spin calc(var(--uib-speed) * 2.5) infinite linear;
-}
-
-.three-body__dot {
-  position: absolute;
-  height: 100%;
-  width: 30%;
-}
-
-.three-body__dot:after {
-  content: "";
-  position: absolute;
-  height: 0%;
-  width: 100%;
-  padding-bottom: 100%;
-  background-color: var(--uib-color);
-  border-radius: 50%;
-}
-
-.three-body__dot:nth-child(1) {
-  bottom: 5%;
-  left: 0;
-  transform: rotate(60deg);
-  transform-origin: 50% 85%;
-}
-
-.three-body__dot:nth-child(1)::after {
-  bottom: 0;
-  left: 0;
-  animation: wobble1 var(--uib-speed) infinite ease-in-out;
-  animation-delay: calc(var(--uib-speed) * -0.3);
-}
-
-.three-body__dot:nth-child(2) {
-  bottom: 5%;
-  right: 0;
-  transform: rotate(-60deg);
-  transform-origin: 50% 85%;
-}
-
-.three-body__dot:nth-child(2)::after {
-  bottom: 0;
-  left: 0;
-  animation: wobble1 var(--uib-speed) infinite calc(var(--uib-speed) * -0.15)
-    ease-in-out;
-}
-
-.three-body__dot:nth-child(3) {
-  bottom: -5%;
-  left: 0;
-  transform: translateX(116.666%);
-}
-
-.three-body__dot:nth-child(3)::after {
-  top: 0;
-  left: 0;
-  animation: wobble2 var(--uib-speed) infinite ease-in-out;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes wobble1 {
-  0%,
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-66%) scale(0.65);
-    opacity: 0.8;
-  }
-}
-
-@keyframes wobble2 {
-  0%,
-  100% {
-    transform: translateY(0%) scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(66%) scale(0.65);
-    opacity: 0.8;
-  }
-}
-#preloader {
-  position: fixed; /* Menggunakan posisi tetap untuk tetap berada di atas konten */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; /* Set tinggi (height) menjadi 100vh */
-  background-color: rgba(
-    255,
-    255,
-    255
-  ); /* Warna latar belakang dengan opasitas */
-  display: flex;
-  justify-content: center; /* Memusatkan secara horizontal */
-  align-items: center; /* Memusatkan secara vertikal */
-  z-index: 9999; /* Atur indeks z tinggi agar preloader muncul di atas konten */
+  color: warnadanfont.$primary;
 }
 @media screen and (max-width: 768px) {
   .carousel-item img {
@@ -270,56 +116,3 @@ main {
 }
 
 /*# sourceMappingURL=homestyle.css.map */
-.search-box {
-    display: inline-block;
-    position: relative;
-}
-
-.input-search {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 80px; /* Anda bisa mengatur nilai border-radius sesuai keinginan Anda */
-    padding: 10px;
-    padding-left: 40px; /* Menggeser teks input agar ikon berada di tengah */
-    font-size: 18px;
-    outline: none;
-    transition: all .5s ease-in-out;
-    background-color: #22a6b3;
-    color: #fff;
-}
-
-.input-search::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 100;
-}
-
-.btn-search {
-    width: 50px;
-    height: 45px;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    border-radius: 0 10px 10px 0; /* Untuk mengatur sudut tajam di sisi kanan */
-    position: absolute;
-    right: 0px;
-    top: 0; /* Untuk membuat ikon berada di tengah tombol secara vertikal */
-    display: flex;
-    align-items: center; /* Untuk mengatur ikon ke tengah tombol secara vertikal */
-    justify-content: center; /* Untuk mengatur ikon ke tengah tombol secara horizontal */
-    color: #ffffff;
-    background-color: transparent;
-    pointer-events: painted;
-}
-
-.btn-search:focus ~ .input-search, .input-search:focus {
-    width: 300px;
-    border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
-    background-color: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
