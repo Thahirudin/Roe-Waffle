@@ -33,7 +33,6 @@ main {
   color: #800000;
   text-decoration: none;
 }
-
 #footer .icon a:hover {
   background-color: #570000;
   width: 40px;
@@ -44,4 +43,30 @@ main {
   align-items: center;
   color: white;
   text-decoration: none;
+}
+.bg-primary2{
+  background-color: #800000;
+}
+.primary{
+  color: #800000;
+}
+#artikel a{
+  color: #800000;
+  text-decoration: none;
+}
+#artikel a:hover{
+  color: #222;
+}
+.artikel-terbaru a{
+  text-decoration: none;
+  color: #222;
+}
+.artikel-terbaru a:hover{
+  color: #800000;
+}
+.icon-share i:hover{
+  background-color: #222;
+}
+.komentar:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }

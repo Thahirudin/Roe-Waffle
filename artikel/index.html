@@ -23,6 +23,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -79,8 +86,14 @@
                 Tentang
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold" href="/tentang kami/">Tentang Kami</a></li>
-                <li><a class="dropdown-item fw-bold" href="/kontak/">Kontak</a></li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="/tentang kami/"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="/kontak/">Kontak</a>
+                </li>
               </ul>
             </li>
             <li class="me-3">
@@ -111,8 +124,264 @@
       </div>
     </nav>
 
-    <main>
-      <!-- Isi codingan -->
+    <main class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <!-- artikel -->
+          <div id="artikel" class="rounded-4 p-3 shadow mb-4 bg-white">
+            <div class="text-wrap">
+              <h1 class="fw-bold primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+                vero.
+              </h1>
+            </div>
+            <div class="mb-3">
+              <span class=".text-secondary"
+                >Oleh Thahirudin | Senin 02 Oktober 2023 | Tips and Trick</span
+              >
+            </div>
+            <div>
+              <img
+                src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+                class="w-100 rounded-3"
+              />
+            </div>
+            <div>
+              <h2>Lorem ipsum dolor sit amet.</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
+                saepe reprehenderit? Sapiente illum quisquam alias, nobis
+                deserunt itaque quam distinctio mollitia possimus fugit autem
+                harum iusto incidunt accusamus explicabo assumenda ea nam! Totam
+                animi quisquam unde exercitationem id vitae libero officiis
+                laudantium itaque odit soluta nulla assumenda fugit nisi vero ab
+                consequuntur minima possimus dolorem, minus architecto suscipit.
+                Tenetur non quae esse perferendis error architecto aliquid vitae
+                ad et eveniet, dolor a vero provident deserunt excepturi ullam
+                libero nemo ab? Perferendis dolorum, cupiditate temporibus,
+                laborum rerum dignissimos reiciendis quas laudantium, quae
+                adipisci eaque nam est corporis optio nesciunt quia minus!
+              </p>
+              <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h2>Lorem, ipsum dolor.</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Explicabo asperiores totam qui vel possimus! Assumenda pariatur
+                maxime iusto dignissimos maiores quaerat temporibus accusantium
+                reiciendis nostrum earum debitis fuga, ipsum nobis adipisci
+                voluptas illo incidunt, deserunt sint! Sit harum, aperiam
+                laborum ad accusantium fugiat. Sapiente repudiandae, incidunt
+                cumque laudantium, doloremque in commodi aperiam blanditiis
+                velit minus, a illo iusto. Incidunt expedita deleniti ipsam
+                veniam tempora recusandae sint mollitia ducimus officia quo.
+                Facere voluptates dicta distinctio, saepe voluptatem vero
+                similique dolore, magnam, architecto officia modi non corporis!
+                Quos temporibus amet velit veniam maxime eos cum perspiciatis
+                atque cumque, ea debitis eius illo.
+              </p>
+              <p>
+                sponsor :
+                <a href="https://www.gamelab.id/">https://www.gamelab.id/</a>
+              </p>
+            </div>
+          </div>
+          <!-- bagikan -->
+          <div class="bagikan p-3 bg-white mb-4 shadow rounded-4">
+            <div>
+              <p class="fw-bold fs-2 primary">BAGIKAN</p>
+            </div>
+            <div class="icon-share">
+              <i
+                class="fa-brands fa-whatsapp fa-xl bg-primary2 text-white py-3 px-2 rounded-2"
+              ></i>
+              <i
+                class="fa-brands fa-instagram fa-xl bg-primary2 text-white py-3 px-2 rounded-2"
+              ></i>
+              <i
+                class="fa-brands fa-facebook fa-xl bg-primary2 text-white py-3 px-2 rounded-2"
+              ></i>
+              <i
+                class="fa-brands fa-twitter fa-xl bg-primary2 text-white py-3 px-2 rounded-2"
+              ></i>
+            </div>
+          </div>
+          <!-- kolom komentar -->
+          <div class="kolom-komentar p-3 bg-white mb-4 shadow rounded-4">
+            <p class="fs-2 fw-bold primary">KOLOM KOMENTAR</p>
+            <div
+              class="komentar text-wrap pt-3 pb-2 px-3 rounded-3 mb-3"
+              style="background-color: #efefef"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <div
+                  class="bg-primary2 d-flex justify-content-center align-items-center rounded-circle"
+                  style="width: 30px; height: 30px"
+                >
+                  <i class="fa-solid fa-user text-white"></i>
+                </div>
+                <span class="fw-bold fs-5">Thahirudin</span>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi dignissimos accusamus aut numquam cum cupiditate
+                  saepe in amet a provident?
+                </p>
+              </div>
+            </div>
+            <div
+              class="komentar text-wrap pt-3 pb-2 px-3 rounded-3 mb-3"
+              style="background-color: #efefef"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <div
+                  class="bg-primary2 d-flex justify-content-center align-items-center rounded-circle"
+                  style="width: 30px; height: 30px"
+                >
+                  <i class="fa-solid fa-user text-white"></i>
+                </div>
+                <span class="fw-bold fs-5">Thahirudin</span>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi dignissimos accusamus aut numquam cum cupiditate
+                  saepe in amet a provident?
+                </p>
+              </div>
+            </div>
+            <div
+              class="komentar text-wrap pt-3 pb-2 px-3 rounded-3 mb-3"
+              style="background-color: #efefef"
+            >
+              <div class="d-flex align-items-center gap-2">
+                <div
+                  class="bg-primary2 d-flex justify-content-center align-items-center rounded-circle"
+                  style="width: 30px; height: 30px"
+                >
+                  <i class="fa-solid fa-user text-white"></i>
+                </div>
+                <span class="fw-bold fs-5">Thahirudin</span>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Excepturi dignissimos accusamus aut numquam cum cupiditate
+                  saepe in amet a provident?
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Tulis Komentar -->
+          <div class="tulis-komentar p-3 bg-white mb-4 shadow rounded-4">
+            <p class="fs-2 fw-bold primary">TULIS KOMENTAR</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="nama" class="form-label fw-bold">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nama"
+                  placeholder="Masukkan Nama Anda"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="komentar" class="form-label"
+                  >Example textarea</label
+                >
+                <textarea
+                  class="form-control"
+                  id="komentar"
+                  rows="4" placeholder="Masukkan Komentar Anda"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="col-md-4">
+          <!-- artikel terbaru -->
+          <div class="artikel-terbaru p-3 rounded-4 bg-white shadow mb-4">
+            <div><p class="fs-2 fw-bold primary">ARTIKEL TERBARU</p></div>
+            <div>
+              <a href="#" class="fw-semibold"
+                ><p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit, iusto.
+                </p></a
+              >
+              <hr />
+              <a href="#" class="fw-semibold"
+                ><p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit, iusto.
+                </p></a
+              >
+              <hr />
+              <a href="#" class="fw-semibold"
+                ><p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit, iusto.
+                </p></a
+              >
+              <hr />
+              <a href="#" class="fw-semibold"
+                ><p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit, iusto.
+                </p></a
+              >
+              <hr />
+              <a href="#" class="fw-semibold"
+                ><p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Suscipit, iusto.
+                </p></a
+              >
+              <hr />
+            </div>
+          </div>
+          <!-- penulis -->
+          <div class="penulis p-3 rounded-4 bg-white shadow mb-4">
+            <div><p class="fw-bold fs-2 primary">PENULIS</p></div>
+            <div class="row align-items-center">
+              <div class="col-3">
+                <div
+                  class="rounded-circle bg-primary2"
+                  style="overflow: hidden; width: 80px; height: 80px"
+                >
+                  <img
+                    src="img/penulis.png"
+                    alt=""
+                    style="object-fit: cover; width: 100%; border-radius: 50%"
+                  />
+                </div>
+              </div>
+              <div class="col-9">
+                <span class="fw-bold fs-3">Dian</span> <br />
+                <span>Senin, 02 Oktober 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="kategori p-3 rounded-4 bg-white shadow mb-4">
+            <div><p class="fw-bold fs-2">KATEGORI</p></div>
+            <div class="text-center">
+              <a href="" class="btn btn-primary fw-semibold mb-3"
+                >Tips and Trick</a
+              >
+              <a href="" class="btn btn-primary fw-semibold mb-3"
+                >Berita dan Informasi</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer>
@@ -126,7 +395,13 @@
                 </div>
                 <div>
                   <span class="text-white"
-                    >Ide Awal kami membangun Usaha ini adalah ingin mengenalkan Jajanan luar yang telah disukai banyak kalangan di Indonesia. Saat ini waffle menjadi salah satu makanan populer dan memiliki pangsa pasar yang luas. Rasanya nikmat sebagai menu camilan, memiliki tekstur yang sama dengan kue dan penyajiannya diberi tambahan berbagai macam topping sehingga menghasilkan rasa waffle yang nikmat.     
+                    >Ide Awal kami membangun Usaha ini adalah ingin mengenalkan
+                    Jajanan luar yang telah disukai banyak kalangan di
+                    Indonesia. Saat ini waffle menjadi salah satu makanan
+                    populer dan memiliki pangsa pasar yang luas. Rasanya nikmat
+                    sebagai menu camilan, memiliki tekstur yang sama dengan kue
+                    dan penyajiannya diberi tambahan berbagai macam topping
+                    sehingga menghasilkan rasa waffle yang nikmat.
                   </span>
                 </div>
               </div>
