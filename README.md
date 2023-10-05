@@ -5,3 +5,10 @@ Terdapat beberapa developer handal dalam pengerjaan projek ini
 - pathia: produk
 - iqbal : all artikel
 - adrian : kontak
+
+# SOP GIT:
+- Informasikan ke Grup
+- git pull origin main
+- git add "nama folder" contoh: "git add "all artikel"
+- git push origin main
+
