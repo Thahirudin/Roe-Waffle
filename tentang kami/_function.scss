@@ -1,0 +1,5 @@
+// Fungsi
+@function calculate-font-size($size) {
+    @return $size * 1px;
+  }
+  

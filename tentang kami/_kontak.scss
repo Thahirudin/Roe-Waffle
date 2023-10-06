@@ -1,0 +1,123 @@
+.contact .section-title h2 {
+    color: variabel.$section-title-color;
+  }
+  
+  .contact .info {
+    width: 100%;
+    i {
+      font-size: calculate-font-size(20);
+      float: left;
+      width: calculate-font-size(44);
+      height: calculate-font-size(44);
+      background: #800000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+      &.white-icon {
+        color: whitesmoke;
+      }
+    }
+    h4 {
+      padding: 0 calculate-font-size(0) calculate-font-size(0) calculate-font-size(60);
+      font-size: calculate-font-size(18);
+      font-weight: 500;
+      margin-bottom: calculate-font-size(5);
+      font-family: "Poppins", sans-serif;
+    }
+    p {
+      padding: 0 calculate-font-size(0) calculate-font-size(0) calculate-font-size(60);
+      margin-bottom: 0;
+      font-size: calculate-font-size(14);
+      color: #bab3a6;
+    }
+    &.open-hours,
+    &.email,
+    &.phone {
+      margin-top: calculate-font-size(40);
+    }
+  }
+  
+  .contact .php-email-form {
+    width: 100%;
+    .form-group {
+      padding-bottom: calculate-font-size(8);
+    }
+    .validate {
+      display: none;
+      color: red;
+      margin: 0 0 calculate-font-size(15) 0;
+      font-weight: 400;
+      font-size: calculate-font-size(13);
+    }
+    .error-message {
+      display: none;
+      color: white;
+      background: #ed3c0d;
+      text-align: center;
+      padding: calculate-font-size(15);
+      font-weight: 600;
+    }
+    .sent-message {
+      display: none;
+      color: white;
+      background: #18d26e;
+      text-align: center;
+      padding: calculate-font-size(15);
+      font-weight: 600;
+    }
+    .loading {
+      display: none;
+      text-align: center;
+      padding: calculate-font-size(15);
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: calculate-font-size(24);
+        height: calculate-font-size(24);
+        margin: 0 calculate-font-size(10) calculate-font-size(-6) 0;
+        border: calculate-font-size(3) solid #cda45e;
+        border-top-color: #1a1814;
+        animation: animate-loading 1s linear infinite;
+      }
+    }
+    input,
+    textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: calculate-font-size(14);
+      background: whitesmoke;
+      border-color: #625b4b;
+      color: #0c0b09;
+      &::-moz-placeholder {
+        color: #a49b89;
+      }
+      &::placeholder {
+        color: #a49b89;
+      }
+      &:focus {
+        border-color: #cda45e;
+      }
+      &.input,
+      &.textarea {
+        height: calculate-font-size(44);
+      }
+      textarea,
+      .textarea {
+        padding: calculate-font-size(10) calculate-font-size(12);
+      }
+    }
+    button[type=submit] {
+      background: #800000;
+      border: 0;
+      padding: calculate-font-size(10) calculate-font-size(35);
+      color: white;
+      transition: 0.4s;
+      border-radius: 50px;
+      &:hover {
+        background: #ff6347;
+      }
+    }
+  }
