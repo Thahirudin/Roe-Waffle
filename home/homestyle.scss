@@ -101,6 +101,10 @@ main {
   color: warnadanfont.$primary;
 }
 @media screen and (max-width: 768px) {
+  main {
+  margin-top: 30px;
+  min-height: 90vh;
+}
   .carousel-item img {
     height: 250px;
   }

@@ -128,7 +128,7 @@
   font-size: 18px;
   outline: none;
   transition: all 0.5s ease-in-out;
-  background-color: #22a6b3;
+  background-color: #222;
   color: #fff;
 }
 
@@ -163,6 +163,7 @@
   width: 300px;
   border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
   background-color: transparent;
+  padding-left: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
@@ -276,6 +277,10 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    margin-top: 30px;
+    min-height: 90vh;
+  }
   .carousel-item img {
     height: 250px;
   }

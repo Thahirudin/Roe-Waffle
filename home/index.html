@@ -61,7 +61,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto justify-content-center">
+          <ul class="navbar-nav mx-auto justify-content-center">
             <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
             <li class="nav-item">
               <a
@@ -74,7 +74,7 @@
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
                 href="/all artikel/"
-                >Postingan</a
+                >Artikel</a
               >
             </li>
             <li class="nav-item">
@@ -105,14 +105,22 @@
                 </li>
               </ul>
             </li>
-            <li class="me-3">
-                <div class="search-box">
-        <button class="btn-search"><i class="fas fa-search"></i></button>
-        <input type="text" class="input-search" placeholder="Type to Search...">
-    </div>
-            </li>
           </ul>
-          <button class="btn btn-success fw-bold">Login</button>
+          <div class="d-md-flex ml-auto">
+            <div class="search-box me-2 mb-3 mb-md-0">
+              <button class="btn-search">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Masukkan Kata Kunci"
+              />
+            </div>
+            <div>
+              <button class="btn btn-success fw-bold ml-2">Login</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
