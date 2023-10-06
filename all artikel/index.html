@@ -46,7 +46,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto justify-content-center">
+          <ul class="navbar-nav mx-auto justify-content-center">
             <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
             <li class="nav-item">
               <a
@@ -59,7 +59,7 @@
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
                 href="/all artikel/"
-                >Postingan</a
+                >Artikel</a
               >
             </li>
             <li class="nav-item">
@@ -80,40 +80,67 @@
                 Tentang
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item fw-bold" href="/tentang kami/">Tentang Kami</a></li>
-                <li><a class="dropdown-item fw-bold" href="/kontak/">Kontak</a></li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="/tentang kami/"
+                    >Tentang Kami</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="/kontak/">Kontak</a>
+                </li>
               </ul>
             </li>
-            <li class="me-3">
-              <div>
-                <form action="" class="d-flex">
-                  <div class="input-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Masukkan Kata Kunci"
-                    />
-                    <button
-                      class="btn"
-                      style="color: white; background-color: #222"
-                      type="button"
-                      id="searchButton"
-                    >
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </li>
           </ul>
-          <button class="btn btn-success fw-bold">Login</button>
+          <div class="d-md-flex ml-auto">
+            <div class="search-box me-2 mb-3 mb-md-0">
+              <button class="btn-search">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Masukkan Kata Kunci"
+              />
+            </div>
+            <div>
+              <button class="btn btn-success fw-bold ml-2">Login</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
 
     <main>
-      <!-- Isi codingan -->
+      <!-- Jumbotron -->
+      <section id="jumbotron" class="mb-3 pb-3 pb-md-0">
+        <div class="container jumbotron">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-md-7 order-1 order-md-0">
+              <div>
+                <span class="text-white fs-1 fw-bold"
+                  >SELAMAT DATANG DI ROE WAFFLE</span
+                >
+              </div>
+              <div>
+                <span class="text-white">
+                  Ide Awal kami membangun Usaha ini adalah ingin mengenalkan
+                  Jajanan luar yang telah disukai banyak kalangan di Indonesia.
+                  Saat ini waffle menjadi salah satu makanan populer dan
+                  memiliki pangsa pasar yang luas. Rasanya nikmat sebagai menu
+                  camilan, memiliki tekstur yang sama dengan kue dan
+                  penyajiannya diberi tambahan berbagai macam topping sehingga
+                  menghasilkan rasa waffle yang nikmat.
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4 order-0 order-md-1">
+              <div class="jumbotron-img text-center text-md-end px-4 px-md-0">
+                <img class="img-fluid w-100" src="img/owner.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
@@ -127,7 +154,13 @@
                 </div>
                 <div>
                   <span class="text-white"
-                    >Ide Awal kami membangun Usaha ini adalah ingin mengenalkan Jajanan luar yang telah disukai banyak kalangan di Indonesia. Saat ini waffle menjadi salah satu makanan populer dan memiliki pangsa pasar yang luas. Rasanya nikmat sebagai menu camilan, memiliki tekstur yang sama dengan kue dan penyajiannya diberi tambahan berbagai macam topping sehingga menghasilkan rasa waffle yang nikmat.     
+                    >Ide Awal kami membangun Usaha ini adalah ingin mengenalkan
+                    Jajanan luar yang telah disukai banyak kalangan di
+                    Indonesia. Saat ini waffle menjadi salah satu makanan
+                    populer dan memiliki pangsa pasar yang luas. Rasanya nikmat
+                    sebagai menu camilan, memiliki tekstur yang sama dengan kue
+                    dan penyajiannya diberi tambahan berbagai macam topping
+                    sehingga menghasilkan rasa waffle yang nikmat.
                   </span>
                 </div>
               </div>
