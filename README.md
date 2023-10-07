@@ -13,3 +13,6 @@ Terdapat beberapa developer handal dalam pengerjaan projek ini
 - git commit -m "masukkan pesan"
 - git push origin main
 
+# Pengerjaan
+- kerjakan file masing masing contoh produk: produk.html, produk.css, produk.js
+
