@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-image: url("img/background.png");
+  background-image: url("../../asset/img/background.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -92,26 +92,4 @@ main {
   align-items: center;
   color: white;
   text-decoration: none;
-}
-
-#jumbotron{
-  background-color: rgba(128, 0, 0, 0.85);
-}
-.artikel a{
-  text-decoration: none;
-}
-.artikel .card{
-  color: #222;
-}
-.artikel .card:hover{
-  color: #800000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.artikel img{
-  object-fit: cover;
-  max-height: 200px;
-  transition: transform 0.3s ease; /* Animasi transisi transformasi */
-}
-.pagination .page-link{
-  color: #222;
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ROE WAFFLE</title>
+    <title>Artikel</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,15 +24,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset/css/all-artikel.css" />
   </head>
   <body>
     <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
       <div class="container">
         <a
           class="navbar-brand fw-bold link-light link-opacity-75-hover"
-          href="/home"
-          ><img src="img/logo.png" alt="" height="40"
+          href="/index.html"
+          ><img src="asset/img/logo.png" alt="" height="40"
         /></a>
         <button
           class="navbar-toggler bg-white"
@@ -51,21 +51,21 @@
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="/home"
+                href="/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="/all artikel/"
+                href="/all-artikel.html"
                 >Artikel</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="/produk/"
+                href="/produk.html"
                 >Produk</a
               >
             </li>
@@ -86,7 +86,7 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item fw-bold" href="/kontak/">Kontak</a>
+                  <a class="dropdown-item fw-bold" href="/kontak.html">Kontak</a>
                 </li>
               </ul>
             </li>
@@ -99,7 +99,7 @@
               <input
                 type="text"
                 class="input-search"
-                placeholder="Masukkan Kata Kunci"
+                placeholder="Masukkan Kata Kunci"  name="search"
               />
             </div>
             <div>
@@ -114,9 +114,9 @@
       <!-- Isi Codingan -->
       <!-- Jumbotron -->
       <section id="jumbotron">
-        <div class="container jumbotron py-md-5">
+        <div class="container jumbotron py-md-5 py-3">
           <div class="row align-items-center justify-content-between">
-            <div class="col-md-6 order-1 order-md-0">
+            <div class="col-md-6 order-1 order-md-0 mb-3 mb-md-0">
               <div>
                 <span class="text-white fs-1 fw-bold"
                   >POSTINGAN ROE WAFFLE</span
@@ -129,11 +129,10 @@
               </div>
             </div>
             <div
-              class="col-md-6 order-0 order-md-1 d-flex align-items-center"
-              style="height: 500px"
+              class="col-md-6 order-0 order-md-1 d-flex align-items-center jumbotron-img"
             >
-              <div class="jumbotron-img text-center text-md-end">
-                <img class="img-fluid w-100" src="img/all-artikel.png" alt="" />
+              <div class="-img text-center text-md-end">
+                <img class="img-fluid w-100" src="asset/img/all-artikel.png" alt="" />
               </div>
             </div>
           </div>
@@ -144,10 +143,10 @@
         <div class="container py-5">
           <div class="row justify-content-between align-items-center mb-5">
             <!-- Kategori -->
-            <div class="col-4">
+            <div class="col-md-4 order-1 order-md-0 ">
               <select
                 class="form-select form-select-lg mb-3 fw-bold"
-                aria-label="Large select example"
+                aria-label="Large select example" name="kategori"
               >
                 <option selected>KATEGORI</option>
                 <option value="1">Tips and Trick</option>
@@ -155,7 +154,7 @@
               </select>
             </div>
             <!-- Search -->
-            <div class="col-5">
+            <div class="col-md-5 order-0 order-md-1 mb-3 mb-md-0">
               <div class="input-group">
                 <input
                   type="text"
@@ -163,6 +162,7 @@
                   placeholder="Cari Artikel Disini"
                   aria-label="Cari Artikel Disini"
                   aria-describedby="button-addon2"
+                  name="cari-artikel"
                 />
                 <button
                   class="btn"
@@ -178,7 +178,7 @@
           <!-- Kumpulan Artikel -->
           <div class="artikel row row-cols-1 row-cols-md-3 g-4 mb-5">
             <div class="col">
-              <a href="/artikel">
+              <a href="/artikel.html">
                 <div class="card h-100">
                   <img
                     src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29va3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
@@ -378,6 +378,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="asset/js/all-artikel.js"></script>
   </body>
 </html>

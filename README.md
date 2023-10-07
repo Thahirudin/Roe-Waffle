@@ -8,7 +8,8 @@ Terdapat beberapa developer handal dalam pengerjaan projek ini
 
 # SOP GIT:
 - Informasikan ke Grup
-- git pull origin main
+- git pull origin .
 - git add "nama folder" contoh: "git add "all artikel"
+- git commit -m "masukkan pesan"
 - git push origin main
 

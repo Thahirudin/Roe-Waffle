@@ -30,15 +30,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="asset/css/artikel.css" />
   </head>
   <body>
     <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
       <div class="container">
         <a
           class="navbar-brand fw-bold link-light link-opacity-75-hover"
-          href="/home"
-          ><img src="img/logo.png" alt="" height="40"
+          href="/index.html"
+          ><img src="asset/img/logo.png" alt="" height="40"
         /></a>
         <button
           class="navbar-toggler bg-white"
@@ -52,26 +52,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto justify-content-center">
+          <ul class="navbar-nav mx-auto justify-content-center">
             <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="/home"
+                href="/index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="/all artikel/"
-                >Postingan</a
+                href="/all-artikel.html"
+                >Artikel</a
               >
             </li>
             <li class="nav-item">
               <a
                 class="nav-link fw-bold link-light link-opacity-75-hover"
-                href="/produk/"
+                href="/produk.html"
                 >Produk</a
               >
             </li>
@@ -92,34 +92,26 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item fw-bold" href="/kontak/">Kontak</a>
+                  <a class="dropdown-item fw-bold" href="/kontak.html">Kontak</a>
                 </li>
               </ul>
             </li>
-            <li class="me-3">
-              <div>
-                <form action="" class="d-flex">
-                  <div class="input-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="Masukkan Kata Kunci"
-                    />
-                    <button
-                      class="btn"
-                      style="color: white; background-color: #222"
-                      type="button"
-                      id="searchButton"
-                    >
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </li>
           </ul>
-          <button class="btn btn-success fw-bold">Login</button>
+          <div class="d-md-flex ml-auto">
+            <div class="search-box me-2 mb-3 mb-md-0">
+              <button class="btn-search">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Masukkan Kata Kunci"  name="search"
+              />
+            </div>
+            <div>
+              <button class="btn btn-success fw-bold ml-2">Login</button>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -148,7 +140,7 @@
               />
             </div>
             <div>
-              <h2>Lorem ipsum dolor sit amet.</h2>
+              <h2 class="fw-bold">Lorem ipsum dolor sit amet.</h2>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias,
                 saepe reprehenderit? Sapiente illum quisquam alias, nobis
@@ -168,7 +160,7 @@
                 <li>Lorem, ipsum dolor.</li>
                 <li>Lorem, ipsum dolor.</li>
               </ul>
-              <h2>Lorem, ipsum dolor.</h2>
+              <h2 class="fw-bold">Lorem, ipsum dolor.</h2>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Explicabo asperiores totam qui vel possimus! Assumenda pariatur
@@ -291,8 +283,8 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="komentar" class="form-label"
-                  >Example textarea</label
+                <label for="komentar" class="form-label fw-bold"
+                  >Isi Komentar</label
                 >
                 <textarea
                   class="form-control"
@@ -300,7 +292,7 @@
                   rows="4" placeholder="Masukkan Komentar Anda"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
+              <button type="submit" class="btn btn-success">Kirim</button>
             </form>
           </div>
         </div>
@@ -357,7 +349,7 @@
                   style="overflow: hidden; width: 80px; height: 80px"
                 >
                   <img
-                    src="img/penulis.png"
+                    src="asset/img/penulis.png"
                     alt=""
                     style="object-fit: cover; width: 100%; border-radius: 50%"
                   />
@@ -470,6 +462,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="asset/js/artikel.js"></script>
   </body>
 </html>

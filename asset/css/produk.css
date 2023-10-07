@@ -4,7 +4,7 @@
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background-color: white;
+  background-image: url("../../asset/img/background.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -13,9 +13,58 @@ body {
 .navbar {
   background-color: #800000;
 }
-
 .navbar .dropdown-item:hover {
   color: #800000;
+}
+.search-box {
+    display: inline-block;
+    position: relative;
+}
+.input-search {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 80px; /* Anda bisa mengatur nilai border-radius sesuai keinginan Anda */
+    padding: 10px;
+    padding-left: 40px; /* Menggeser teks input agar ikon berada di tengah */
+    font-size: 18px;
+    outline: none;
+    transition: all .5s ease-in-out;
+    background-color: #222;
+    color: #fff;
+}
+.input-search::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+.btn-search {
+    width: 50px;
+    height: 45px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0; /* Untuk mengatur sudut tajam di sisi kanan */
+    position: absolute;
+    right: 0px;
+    top: 0; /* Untuk membuat ikon berada di tengah tombol secara vertikal */
+    display: flex;
+    align-items: center; /* Untuk mengatur ikon ke tengah tombol secara vertikal */
+    justify-content: center; /* Untuk mengatur ikon ke tengah tombol secara horizontal */
+    color: #ffffff;
+    background-color: transparent;
+    pointer-events: painted;
+}
+.btn-search:focus ~ .input-search, .input-search:focus {
+    width: 300px;
+    border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
+    background-color: transparent;
+    padding-left: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
 }
 main {
   margin-top: 80px;
