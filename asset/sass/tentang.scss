@@ -1,3 +1,86 @@
+@use 'variabel';
+@import 'aboutt';
+@import 'why';
+@import 'function';
+@import 'mixin';
+@import 'galeri';
+@import 'animasi';
+@import 'navbar';
+// SCSS Utama
+* {
+  padding: 0;
+  margin: 0;
+  font-family: variabel.$main-font;
+}
+
+body {
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: variabel.$navbar-background;
+}
+
+main {
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+#footer .icon a {
+  background-color: variabel.$icon-background;
+  width: calculate-font-size(40);
+  height: calculate-font-size(40);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: variabel.$icon-color;
+  text-decoration: none;
+  &:hover {
+    background-color: variabel.$icon-hover-background;
+    color: white;
+  }
+}
+
+@include media-query(768px) {
+  .carousel-item img {
+    height: calculate-font-size(200);
+  }
+  .jumbotron-img {
+    height: calculate-font-size(400);
+  }
+}
+
+.section-title {
+  padding-bottom: calculate-font-size(40);
+  h2 {
+    font-size: calculate-font-size(14);
+    font-weight: 500;
+    padding: 0;
+    line-height: calculate-font-size(1);
+    margin: 0 0 calculate-font-size(5) 0;
+    letter-spacing: calculate-font-size(2);
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    &::after {
+      content: "";
+      width: calculate-font-size(120);
+      height: calculate-font-size(1);
+      display: inline-block;
+      margin: calculate-font-size(4) calculate-font-size(10);
+    }
+  }
+  p {
+    margin: 0;
+    font-size: calculate-font-size(36);
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+  }
+}
 .contact .section-title h2 {
     color: variabel.$section-title-color;
   }

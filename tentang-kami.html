@@ -8,7 +8,7 @@
     <!-- Montserrat -->
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="tentang.css"/>
+    <link rel="stylesheet" href="asset/css/tentang.css"/>
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -18,89 +18,87 @@
 </head>
 <body>
   <nav id="nav" class="navbar navbar-expand-lg mb-3 fixed-top">
-    <div class="container">
-      <a
-        class="navbar-brand fw-bold link-light link-opacity-75-hover"
-        href="/home"
-        ><img src="img/logo.png" alt="" height="40"
-      /></a>
-      <button
-        class="navbar-toggler bg-white"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto justify-content-center">
-          <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
-          <li class="nav-item">
-            <a
-              class="nav-link fw-bold link-light link-opacity-75-hover"
-              href="/home"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link fw-bold link-light link-opacity-75-hover"
-              href="/all artikel/"
-              >Postingan</a
-            >
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link fw-bold link-light link-opacity-75-hover"
-              href="/produk/"
-              >Produk</a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link fw-bold link-light link-opacity-75-hover dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Tentang
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item fw-bold" href="/tentang kami/">Tentang Kami</a></li>
-              <li><a class="dropdown-item fw-bold" href="/kontak/">Kontak</a></li>
-            </ul>
-          </li>
-          <li class="me-3">
-            <div>
-              <form action="" class="d-flex">
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                    placeholder="Masukkan Kata Kunci"
-                  />
-                  <button
-                    class="btn"
-                    style="color: white; background-color: #222"
-                    type="button"
-                    id="searchButton"
+      <div class="container">
+        <a
+          class="navbar-brand fw-bold link-light link-opacity-75-hover"
+          href="/index.html"
+          ><img src="asset/img/logo.png" alt="" height="40"
+        /></a>
+        <button
+          class="navbar-toggler bg-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto justify-content-center">
+            <!-- Menggunakan ms-auto untuk menggeser ke kanan -->
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold link-light link-opacity-75-hover"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold link-light link-opacity-75-hover"
+                href="/all-artikel.html"
+                >Artikel</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fw-bold link-light link-opacity-75-hover"
+                href="/produk.html"
+                >Produk</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fw-bold link-light link-opacity-75-hover dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tentang
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item fw-bold" href="/tentang-kami.html"
+                    >Tentang Kami</a
                   >
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-              </form>
+                </li>
+                <li>
+                  <a class="dropdown-item fw-bold" href="/kontak.html">Kontak</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-md-flex ml-auto">
+            <div class="search-box me-2 mb-3 mb-md-0">
+              <button class="btn-search">
+                <i class="fas fa-search"></i>
+              </button>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Masukkan Kata Kunci"  name="search"
+              />
             </div>
-          </li>
-        </ul>
-        <button class="btn btn-success fw-bold">Login</button>
+            <div>
+              <button class="btn btn-success fw-bold ml-2">Login</button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
       <main>
         
@@ -111,7 +109,7 @@
           <div class="row">
             <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
               <div class="about-img">
-                <img src="img/toko.jpg" alt="">
+                <img src="asset/img/toko.jpg" alt="">
               </div>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
@@ -196,64 +194,64 @@
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto1.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto1.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto2.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto2.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto3.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto3.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto5.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto5.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto7.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto7.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto9.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto9.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto9.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto9.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto10.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto10.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto10.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto10.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="img/foto11.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="img/foto11.jpg" alt="" class="img-fluid">
+              <a href="asset/img/foto11.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="asset/img/foto11.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -320,14 +318,14 @@
               <form action="forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="row">
                   <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required autocomplete="off">
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required autocomplete="off">
                   </div>
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required autocomplete="off">
                 </div>
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" rows="8" placeholder="Pesan" required></textarea>
@@ -432,6 +430,6 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"
       ></script>
-      <script src="script.js"></script>
+      <script src="asset/js/tentang.js"></script>
 </body>
 </html>
