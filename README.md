@@ -8,11 +8,14 @@ Terdapat beberapa developer handal dalam pengerjaan projek ini
 
 # SOP GIT:
 - Informasikan ke Grup
-- git pull origin .
-- git add "nama folder" contoh: "git add "all artikel"
+- git pull origin main
+- git add .
 - git commit -m "masukkan pesan"
 - git push origin main
+- jika ada error kabari di grup
 
+# Proble solving
+- error CRLF/LF : git config --global core.autocrlf true
 # Pengerjaan
 - kerjakan file masing masing contoh produk: produk.html, produk.css, produk.js
 

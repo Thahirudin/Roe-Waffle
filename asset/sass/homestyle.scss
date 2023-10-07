@@ -1,10 +1,10 @@
-@use 'warnadanfont';
+@use 'variabel';
 @import 'preloader';
 @function getBackgroundColor($bgColor) {
   @if $bgColor == "white" {
     @return rgba(255, 255, 255, 0.7);
   } @else if $bgColor == "primary" {
-    @return warnadanfont.$primary;
+    @return variabel.$primary;
   } @else {
     @return $bgColor;
   }
@@ -14,7 +14,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: warnadanfont.$default-font, sans-serif;
+  font-family: variabel.$main-font, sans-serif;
 }
 
 body {
@@ -40,7 +40,7 @@ main {
 }
 
 .card:hover {
-  color: warnadanfont.$primary;
+  color: variabel.$primary;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,13 +92,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: warnadanfont.$primary;
+  color: variabel.$primary;
   text-decoration: none;
   font-size: 3rem;
 }
 .angle:hover {
   background-color: getAngleBackgroundColor(true);
-  color: warnadanfont.$primary;
+  color: variabel.$primary;
 }
 @media screen and (max-width: 768px) {
   main {

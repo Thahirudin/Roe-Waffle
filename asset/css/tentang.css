@@ -126,6 +126,163 @@
   color: white;
 }
 
+.gallery .section-title h2 {
+  color: #800000;
+}
+
+.gallery .gallery-item {
+  overflow: hidden;
+  border-right: 3px solid #454035;
+  border-bottom: 3px solid #454035;
+}
+.gallery .gallery-item img {
+  transition: all ease-in-out 0.4s;
+}
+.gallery .gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.navbar {
+  background-color: #800000;
+}
+
+.navbar .dropdown-item:hover {
+  color: #800000;
+}
+
+.search-box {
+  display: inline-block;
+  position: relative;
+}
+
+.input-search {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 80px; /* Anda bisa mengatur nilai border-radius sesuai keinginan Anda */
+  padding: 10px;
+  padding-left: 40px; /* Menggeser teks input agar ikon berada di tengah */
+  font-size: 18px;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+  background-color: #222;
+  color: #fff;
+}
+
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search {
+  width: 50px;
+  height: 45px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0; /* Untuk mengatur sudut tajam di sisi kanan */
+  position: absolute;
+  right: 0px;
+  top: 0; /* Untuk membuat ikon berada di tengah tombol secara vertikal */
+  display: flex;
+  align-items: center; /* Untuk mengatur ikon ke tengah tombol secara vertikal */
+  justify-content: center; /* Untuk mengatur ikon ke tengah tombol secara horizontal */
+  color: #ffffff;
+  background-color: transparent;
+  pointer-events: painted;
+}
+
+.btn-search:focus ~ .input-search, .input-search:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #ffffe8;
+}
+
+.navbar {
+  background-color: #800000;
+}
+
+main {
+  margin-top: 80px;
+  min-height: 100vh;
+}
+
+#footer .icon a {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
+}
+#footer .icon a:hover {
+  background-color: #570000;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+  }
+  .jumbotron-img {
+    height: 400px;
+  }
+}
+.section-title {
+  padding-bottom: 40px;
+}
+.section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  margin: 4px 10px;
+}
+.section-title p {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+}
+
 .contact .section-title h2 {
   color: #800000;
 }
@@ -252,100 +409,6 @@
 }
 .contact .php-email-form button[type=submit]:hover {
   background: #ff6347;
-}
-
-.gallery .section-title h2 {
-  color: #800000;
-}
-
-.gallery .gallery-item {
-  overflow: hidden;
-  border-right: 3px solid #454035;
-  border-bottom: 3px solid #454035;
-}
-.gallery .gallery-item img {
-  transition: all ease-in-out 0.4s;
-}
-.gallery .gallery-item:hover img {
-  transform: scale(1.1);
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-* {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-body {
-  background-color: #ffffe8;
-}
-
-.navbar {
-  background-color: #800000;
-}
-
-main {
-  margin-top: 80px;
-  min-height: 100vh;
-}
-
-#footer .icon a {
-  background-color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #800000;
-  text-decoration: none;
-}
-#footer .icon a:hover {
-  background-color: #570000;
-  color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .carousel-item img {
-    height: 200px;
-  }
-  .jumbotron-img {
-    height: 400px;
-  }
-}
-.section-title {
-  padding-bottom: 40px;
-}
-.section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
-  padding: 0;
-  line-height: 1px;
-  margin: 0 0 5px 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-}
-.section-title h2::after {
-  content: "";
-  width: 120px;
-  height: 1px;
-  display: inline-block;
-  margin: 4px 10px;
-}
-.section-title p {
-  margin: 0;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
 }
 
 /*# sourceMappingURL=tentang.css.map */
