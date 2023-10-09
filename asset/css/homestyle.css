@@ -108,7 +108,6 @@
 .navbar {
   background-color: #800000;
 }
-
 .navbar .dropdown-item:hover {
   color: #800000;
 }
@@ -122,16 +121,15 @@
   width: 40px;
   height: 40px;
   border: none;
-  border-radius: 80px; /* Anda bisa mengatur nilai border-radius sesuai keinginan Anda */
+  border-radius: 80px;
   padding: 10px;
-  padding-left: 40px; /* Menggeser teks input agar ikon berada di tengah */
+  padding-left: 40px;
   font-size: 18px;
   outline: none;
   transition: all 0.5s ease-in-out;
   background-color: #222;
   color: #fff;
 }
-
 .input-search::placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
@@ -147,21 +145,77 @@
   font-weight: bold;
   outline: none;
   cursor: pointer;
-  border-radius: 0 10px 10px 0; /* Untuk mengatur sudut tajam di sisi kanan */
+  border-radius: 0 10px 10px 0;
   position: absolute;
   right: 0px;
-  top: 0; /* Untuk membuat ikon berada di tengah tombol secara vertikal */
+  top: 0;
   display: flex;
-  align-items: center; /* Untuk mengatur ikon ke tengah tombol secara vertikal */
-  justify-content: center; /* Untuk mengatur ikon ke tengah tombol secara horizontal */
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   background-color: transparent;
   pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search, .input-search:focus {
+.btn-search1 {
+  right: 60px;
+}
+
+.btn-search2 {
+  right: 120px;
+}
+
+.btn-search3 {
+  right: 180px;
+}
+
+.btn-search4 {
+  right: 240px;
+}
+
+.btn-search5 {
+  right: 300px;
+}
+
+.btn-search1:focus ~ .input-search, .input-search1:focus {
   width: 300px;
-  border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search2:focus ~ .input-search, .input-search2:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search3:focus ~ .input-search, .input-search3:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search4:focus ~ .input-search, .input-search4:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search5:focus ~ .input-search, .input-search5:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
   background-color: transparent;
   padding-left: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -238,6 +292,14 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.card i {
+  color: #800000;
+}
+
+.produk-img {
+  height: 280px; /* Sesuaikan dengan tinggi yang Anda inginkan */
+}
+
 #footer .icon a {
   background-color: white;
   width: 40px;
@@ -296,6 +358,9 @@ main {
     width: 60px; /* Ukuran ketika lebar tampilan <= 768px */
     height: 60px; /* Ukuran ketika lebar tampilan <= 768px */
     font-size: 2rem; /* Ukuran font ketika lebar tampilan <= 768px */
+  }
+  .produk-img {
+    height: 100px; /* Sesuaikan dengan tinggi yang Anda inginkan */
   }
 }
 
