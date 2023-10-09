@@ -14,8 +14,10 @@ Terdapat beberapa developer handal dalam pengerjaan projek ini
 - git push origin main
 - jika ada error kabari di grup
 
-# Proble solving
+# Problem solving
 - error CRLF/LF : git config --global core.autocrlf true
 # Pengerjaan
 - kerjakan file masing masing contoh produk: produk.html, produk.css, produk.js
 
+# Domain
+http://roe-waffle.wuaze.com/
