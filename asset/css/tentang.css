@@ -84,21 +84,18 @@
 .why-us .section-title h2 {
   color: #800000;
 }
-
 .why-us .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   background: white;
 }
-
 .why-us .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
   color: #800000;
 }
-
 .why-us .box h4 {
   font-size: 24px;
   font-weight: 600;
@@ -106,24 +103,31 @@
   margin: 20px 0;
   color: #222;
 }
-
 .why-us .box p {
   color: #aaaaaa;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
-
 .why-us .box:hover {
   background: #800000;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
-
-.why-us .box:hover span,
-.why-us .box:hover h4,
-.why-us .box:hover p {
+.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
   color: white;
+}
+.why-us .section-title h2 {
+  color: white;
+}
+.why-us .box-child {
+  background-color: #800000;
+}
+.why-us .box-child {
+  background-color: #333;
+}
+.why-us .box-child {
+  background-color: #999;
 }
 
 .gallery .section-title h2 {
@@ -153,7 +157,6 @@
 .navbar {
   background-color: #800000;
 }
-
 .navbar .dropdown-item:hover {
   color: #800000;
 }
@@ -167,16 +170,15 @@
   width: 40px;
   height: 40px;
   border: none;
-  border-radius: 80px; /* Anda bisa mengatur nilai border-radius sesuai keinginan Anda */
+  border-radius: 80px;
   padding: 10px;
-  padding-left: 40px; /* Menggeser teks input agar ikon berada di tengah */
+  padding-left: 40px;
   font-size: 18px;
   outline: none;
   transition: all 0.5s ease-in-out;
   background-color: #222;
   color: #fff;
 }
-
 .input-search::placeholder {
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
@@ -192,21 +194,77 @@
   font-weight: bold;
   outline: none;
   cursor: pointer;
-  border-radius: 0 10px 10px 0; /* Untuk mengatur sudut tajam di sisi kanan */
+  border-radius: 0 10px 10px 0;
   position: absolute;
   right: 0px;
-  top: 0; /* Untuk membuat ikon berada di tengah tombol secara vertikal */
+  top: 0;
   display: flex;
-  align-items: center; /* Untuk mengatur ikon ke tengah tombol secara vertikal */
-  justify-content: center; /* Untuk mengatur ikon ke tengah tombol secara horizontal */
+  align-items: center;
+  justify-content: center;
   color: #ffffff;
   background-color: transparent;
   pointer-events: painted;
 }
 
-.btn-search:focus ~ .input-search, .input-search:focus {
+.btn-search1 {
+  right: 60px;
+}
+
+.btn-search2 {
+  right: 120px;
+}
+
+.btn-search3 {
+  right: 180px;
+}
+
+.btn-search4 {
+  right: 240px;
+}
+
+.btn-search5 {
+  right: 300px;
+}
+
+.btn-search1:focus ~ .input-search, .input-search1:focus {
   width: 300px;
-  border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search2:focus ~ .input-search, .input-search2:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search3:focus ~ .input-search, .input-search3:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search4:focus ~ .input-search, .input-search4:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
+  background-color: transparent;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.btn-search5:focus ~ .input-search, .input-search5:focus {
+  width: 300px;
+  border-radius: 0 10px 0 0;
   background-color: transparent;
   padding-left: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
@@ -236,10 +294,10 @@ main {
   min-height: 100vh;
 }
 
-#footer .icon a {
+#footer .icon:nth-child(1) a {
   background-color: white;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -247,7 +305,71 @@ main {
   color: #800000;
   text-decoration: none;
 }
-#footer .icon a:hover {
+#footer .icon:nth-child(1) a:hover {
+  background-color: #570000;
+  color: white;
+}
+
+#footer .icon:nth-child(2) a {
+  background-color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
+}
+#footer .icon:nth-child(2) a:hover {
+  background-color: #570000;
+  color: white;
+}
+
+#footer .icon:nth-child(3) a {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
+}
+#footer .icon:nth-child(3) a:hover {
+  background-color: #570000;
+  color: white;
+}
+
+#footer .icon:nth-child(4) a {
+  background-color: white;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
+}
+#footer .icon:nth-child(4) a:hover {
+  background-color: #570000;
+  color: white;
+}
+
+#footer .icon:nth-child(5) a {
+  background-color: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #800000;
+  text-decoration: none;
+}
+#footer .icon:nth-child(5) a:hover {
   background-color: #570000;
   color: white;
 }
@@ -324,6 +446,18 @@ main {
 }
 .contact .info.open-hours, .contact .info.email, .contact .info.phone {
   margin-top: 40px;
+}
+
+.contact .info:nth-child(1) {
+  margin-left: 20px;
+}
+
+.contact .info:nth-child(2) {
+  margin-left: 40px;
+}
+
+.contact .info:nth-child(3) {
+  margin-left: 60px;
 }
 
 .contact .php-email-form {

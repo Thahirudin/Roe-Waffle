@@ -1,3 +1,4 @@
+// Mengimpor file variabel dan mixin yang diperlukan
 @use 'variabel';
 @import 'aboutt';
 @import 'why';
@@ -6,6 +7,7 @@
 @import 'galeri';
 @import 'animasi';
 @import 'navbar';
+
 // SCSS Utama
 * {
   padding: 0;
@@ -30,22 +32,26 @@ main {
   min-height: 100vh;
 }
 
-#footer .icon a {
-  background-color: variabel.$icon-background;
-  width: calculate-font-size(40);
-  height: calculate-font-size(40);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: variabel.$icon-color;
-  text-decoration: none;
-  &:hover {
-    background-color: variabel.$icon-hover-background;
-    color: white;
+// Perulangan untuk elemen dengan class .icon
+@for $i from 1 through 5 { // Ini adalah contoh perulangan, ganti 5 sesuai dengan jumlah yang Anda butuhkan
+  #footer .icon:nth-child(#{$i}) a {
+    background-color: variabel.$icon-background;
+    width: calculate-font-size(40 + $i * 10); // Contoh penggunaan variabel perulangan
+    height: calculate-font-size(40 + $i * 10); // Contoh penggunaan variabel perulangan
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variabel.$icon-color;
+    text-decoration: none;
+    &:hover {
+      background-color: variabel.$icon-hover-background;
+      color: white;
+    }
   }
 }
 
+// Menggunakan mixin @media-query
 @include media-query(768px) {
   .carousel-item img {
     height: calculate-font-size(200);
@@ -81,46 +87,62 @@ main {
     font-family: "Playfair Display", serif;
   }
 }
-.contact .section-title h2 {
+
+// Contoh penggunaan kondisi (conditional)
+@if variabel.$condition {
+  .contact .section-title h2 {
     color: variabel.$section-title-color;
   }
-  
-  .contact .info {
-    width: 100%;
-    i {
-      font-size: calculate-font-size(20);
-      float: left;
-      width: calculate-font-size(44);
-      height: calculate-font-size(44);
-      background: #800000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50px;
-      transition: all 0.3s ease-in-out;
-      &.white-icon {
-        color: whitesmoke;
-      }
-    }
-    h4 {
-      padding: 0 calculate-font-size(0) calculate-font-size(0) calculate-font-size(60);
-      font-size: calculate-font-size(18);
-      font-weight: 500;
-      margin-bottom: calculate-font-size(5);
-      font-family: "Poppins", sans-serif;
-    }
-    p {
-      padding: 0 calculate-font-size(0) calculate-font-size(0) calculate-font-size(60);
-      margin-bottom: 0;
-      font-size: calculate-font-size(14);
-      color: #bab3a6;
-    }
-    &.open-hours,
-    &.email,
-    &.phone {
-      margin-top: calculate-font-size(40);
+} @else {
+  .contact .section-title h2 {
+    color: red; // Ganti dengan warna lain jika diperlukan
+  }
+}
+
+.contact .info {
+  width: 100%;
+  i {
+    font-size: calculate-font-size(20);
+    float: left;
+    width: calculate-font-size(44);
+    height: calculate-font-size(44);
+    background: #800000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    &.white-icon {
+      color: whitesmoke;
     }
   }
+  h4 {
+    padding: 0 calculate-font-size(0) calculate-font-size(0) calculate-font-size(60);
+    font-size: calculate-font-size(18);
+    font-weight: 500;
+    margin-bottom: calculate-font-size(5);
+    font-family: "Poppins", sans-serif;
+  }
+  p {
+    padding: 0 calculate-font-size(0) calculate-font-size(0) calculate-font-size(60);
+    margin-bottom: 0;
+    font-size: calculate-font-size(14);
+    color: #bab3a6;
+  }
+  &.open-hours,
+  &.email,
+  &.phone {
+    margin-top: calculate-font-size(40);
+  }
+}
+
+// Contoh penggunaan perulangan (loop)
+@for $i from 1 through 3 { // Ini adalah contoh perulangan, ganti 3 sesuai dengan jumlah yang Anda butuhkan
+  .contact .info:nth-child(#{$i}) {
+    margin-left: calculate-font-size(20 * $i); // Contoh penggunaan variabel perulangan
+  }
+}
+
   
   .contact .php-email-form {
     width: 100%;
