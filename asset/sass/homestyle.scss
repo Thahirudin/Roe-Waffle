@@ -34,6 +34,9 @@ main {
 .ulasan {
   background-color: getBackgroundColor(rgba(128, 0, 0, 0.85));
 }
+.ulasan .card-body{
+  height: 300px;
+}
 .card img {
   max-height: 200px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
   object-fit: cover;
