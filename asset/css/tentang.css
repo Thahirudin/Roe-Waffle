@@ -294,10 +294,10 @@ main {
   min-height: 100vh;
 }
 
-#footer .icon:nth-child(1) a {
+#footer .icon a {
   background-color: white;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -305,71 +305,7 @@ main {
   color: #800000;
   text-decoration: none;
 }
-#footer .icon:nth-child(1) a:hover {
-  background-color: #570000;
-  color: white;
-}
-
-#footer .icon:nth-child(2) a {
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #800000;
-  text-decoration: none;
-}
-#footer .icon:nth-child(2) a:hover {
-  background-color: #570000;
-  color: white;
-}
-
-#footer .icon:nth-child(3) a {
-  background-color: white;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #800000;
-  text-decoration: none;
-}
-#footer .icon:nth-child(3) a:hover {
-  background-color: #570000;
-  color: white;
-}
-
-#footer .icon:nth-child(4) a {
-  background-color: white;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #800000;
-  text-decoration: none;
-}
-#footer .icon:nth-child(4) a:hover {
-  background-color: #570000;
-  color: white;
-}
-
-#footer .icon:nth-child(5) a {
-  background-color: white;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #800000;
-  text-decoration: none;
-}
-#footer .icon:nth-child(5) a:hover {
+#footer .icon a:hover {
   background-color: #570000;
   color: white;
 }

@@ -32,24 +32,27 @@ main {
   min-height: 100vh;
 }
 
-// Perulangan untuk elemen dengan class .icon
-@for $i from 1 through 5 { // Ini adalah contoh perulangan, ganti 5 sesuai dengan jumlah yang Anda butuhkan
-  #footer .icon:nth-child(#{$i}) a {
-    background-color: variabel.$icon-background;
-    width: calculate-font-size(40 + $i * 10); // Contoh penggunaan variabel perulangan
-    height: calculate-font-size(40 + $i * 10); // Contoh penggunaan variabel perulangan
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: variabel.$icon-color;
-    text-decoration: none;
-    &:hover {
-      background-color: variabel.$icon-hover-background;
-      color: white;
+#footer {
+  .icon {
+    a {
+      background-color: white;
+      width: variabel.$icon-size;
+      height: variabel.$icon-size;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #800000;
+      text-decoration: none;
+
+      &:hover {
+        background-color: #570000;
+        color: white;
+      }
     }
   }
 }
+
 
 // Menggunakan mixin @media-query
 @include media-query(768px) {
