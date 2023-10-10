@@ -107,14 +107,16 @@ main {
  /* header */
  #header{
   background: url(../../asset/img/Food\ \ Projects\ \(2\).jpg) top/cover no-repeat;
+  background-size: 700px;
+  background-position: center;
  }
  .carousel-inner h1{
-     font-size: 40px;
+     font-size: 20px;
      font-family: var(--lg-font);
      color: white;
  }
  .carousel-inner h2{
-     font-size: 60px;
+     font-size: 40px;
      color: white;
  }
  .carousel-item .btn{
@@ -136,24 +138,45 @@ main {
      -webkit-transform: translateY(-50%);
          -ms-transform: translateY(-50%);
              transform: translateY(-50%);
- }
  
- /* collection */
- .active-filter-btn{
-     background-color: var(--maroon)!important;
-     color: #fff!important;
-     border-color: var(--maroon)!important;
+    
  }
- .filter-button-group .btn:hover{
-     color: #fff!important;
- }
- .collection-img span{
-     top: 10px;
-     right: 10px;
-     width: 36px;
-     height: 36px;
-     border-radius: 50%;
- }
+/* Add shadow effect to the cards */
+.collection-img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .collection-img:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style the card content */
+  .collection {
+    text-align: center;
+  }
+  
+  .collection p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .collection span {
+    font-size: 18px;
+    color: #ff6600; /* Customize the text color as needed */
+    margin-top: 5px;
+  }
+  
+  /* Customize other styles as needed */
+  /* Add shadow effect to the entire card background */
+.bg-white {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+  }
+  
+  .bg-white:hover {
+    transform: translateY(-5px);
+  }
 #footer .icon a {
   background-color: white;
   width: 40px;
