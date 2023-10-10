@@ -16,56 +16,6 @@ body {
 .navbar .dropdown-item:hover {
   color: #800000;
 }
-.search-box {
-    display: inline-block;
-    position: relative;
-}
-.input-search {
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 80px; /* Anda bisa mengatur nilai border-radius sesuai keinginan Anda */
-    padding: 10px;
-    padding-left: 40px; /* Menggeser teks input agar ikon berada di tengah */
-    font-size: 18px;
-    outline: none;
-    transition: all .5s ease-in-out;
-    background-color: #222;
-    color: #fff;
-}
-.navbar .input-search::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 18px;
-    letter-spacing: 2px;
-    font-weight: 100;
-}
-.btn-search {
-    width: 50px;
-    height: 45px;
-    border: none;
-    font-size: 20px;
-    font-weight: bold;
-    outline: none;
-    cursor: pointer;
-    border-radius: 0 10px 10px 0; /* Untuk mengatur sudut tajam di sisi kanan */
-    position: absolute;
-    right: 0px;
-    top: 0; /* Untuk membuat ikon berada di tengah tombol secara vertikal */
-    display: flex;
-    align-items: center; /* Untuk mengatur ikon ke tengah tombol secara vertikal */
-    justify-content: center; /* Untuk mengatur ikon ke tengah tombol secara horizontal */
-    color: #ffffff;
-    background-color: transparent;
-    pointer-events: painted;
-}
-.btn-search:focus ~ .input-search, .input-search:focus {
-    width: 300px;
-    border-radius: 0 10px 0 0; /* Untuk mengatur sudut tajam hanya di sisi atas input saat dalam fokus */
-    background-color: transparent;
-    padding-left: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
-}
 main {
   margin-top: 60px;
 }
@@ -105,27 +55,53 @@ main {
  }
  
  /* header */
- #header{
-  background: url(../../asset/img/Food\ \ Projects\ \(2\).jpg) top/cover no-repeat;
-  background-size: 700px;
-  background-position: center;
- }
- .carousel-inner h1{
-     font-size: 20px;
-     font-family: var(--lg-font);
-     color: white;
- }
- .carousel-inner h2{
-     font-size: 40px;
-     color: white;
- }
- .carousel-item .btn{
-     border-color:maroon!important;
- }
- .carousel-item .btn:hover{
-     border-color: var(--maroon)!important;
- }
- 
+ .carousel-inner {
+  border-radius: 30px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 600px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
+  object-fit: cover; /* Untuk memastikan gambar tetap terlihat baik meskipun memiliki rasio aspek yang berbeda */
+}
+
+.custom-carousel-indicators {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.custom-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #222;
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.custom-indicator.active {
+  background-color: #800000;
+}
+
+/* Gaya untuk carousel caption */
+.carousel-caption {
+  color: #fff; /* Warna teks */
+  padding: 10px; /* Ruang dalam pada caption */
+}
+
+/* Gaya untuk teks dalam caption */
+.carousel-caption p {
+  font-size: 25px; /* Ukuran font */
+  font-weight: bold; /* Tebal teks */
+  text-align: center;
+}
+.carousel-caption h2{
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  ;
+}
  /* title */
  .title h2::before{
      position: absolute;
@@ -163,7 +139,7 @@ main {
   
   .collection span {
     font-size: 18px;
-    color: #ff6600; /* Customize the text color as needed */
+    color: maroon; /* Customize the text color as needed */
     margin-top: 5px;
   }
   
