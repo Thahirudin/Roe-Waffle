@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+  body {
+    background-image: url("../../asset/img/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+  }
+  .navbar {
+    background-color: #800000;
+  }
+  .navbar .dropdown-item:hover {
+    color: #800000;
+  }
+  main {
+    margin-top: 60px;
+  }
+  :root{
+    --maroon: #800000;
+   }
+   /* button */
+   .bg-primary{
+       background-color: var(--maroon)!important;
+   }
+   
+  #header .btn:not(.nav-btns button){
+       background-color: #fff;
+       color:  #800000;
+       padding: 5px 10px;
+       border-radius: 8px;
+       border: 1px solid 800000;
+   }
+  #header .btn:not(.nav-btns button):hover{
+       background-color: var(--maroon);
+       color: white;
+       border-color: var(--maroon);
+       font-weight: bold;
+   }
+   #collection .btn:not(.nav-btns button){
+       background-color: #fff;
+       color:  #800000;
+       padding: 5px 10px;
+       border-radius: 8px;
+       border: 1px solid 800000;
+   }
+  #collection .btn:not(.nav-btns button):hover{
+       background-color: var(--maroon);
+       color: white;
+       border-color: var(--maroon);
+       font-weight: bold;
+   }
+   
+   /* header */
+   .carousel-inner {
+    border-radius: 30px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 600px; /* Ganti angka ini sesuai dengan tinggi yang Anda inginkan */
+    object-fit: cover; /* Untuk memastikan gambar tetap terlihat baik meskipun memiliki rasio aspek yang berbeda */
+  }
+  
+  .custom-carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .custom-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #222;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-indicator.active {
+    background-color: #800000;
+  }
+  
+  /* Gaya untuk carousel caption */
+  .carousel-caption {
+    color: #fff; /* Warna teks */
+    padding: 10px; /* Ruang dalam pada caption */
+  }
+  
+  /* Gaya untuk teks dalam caption */
+  .carousel-caption p {
+    font-size: 25px; /* Ukuran font */
+    font-weight: bold; /* Tebal teks */
+    text-align: center;
+  }
+  .carousel-caption h2{
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    ;
+  }
+   /* title */
+   .title h2::before{
+       position: absolute;
+       content: "";
+       width: 4px;
+       height: 50px;
+       background-color: var(--maroon);
+       left: -20px;
+       top: 50%;
+       -webkit-transform: translateY(-50%);
+           -ms-transform: translateY(-50%);
+               transform: translateY(-50%);
+   
+      
+   }
+  /* Add shadow effect to the cards */
+  .collection-img {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+    
+    .collection-img:hover {
+      transform: translateY(-5px);
+    }
+    
+    /* Style the card content */
+    .collection {
+      text-align: center;
+    }
+    
+    .collection p {
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    
+    .collection span {
+      font-size: 18px;
+      color: maroon; /* Customize the text color as needed */
+      margin-top: 5px;
+    }
+    
+    /* Customize other styles as needed */
+    /* Add shadow effect to the entire card background */
+  .bg-white {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s;
+    }
+    
+    .bg-white:hover {
+      transform: translateY(-5px);
+    }
+  #footer .icon a {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #800000;
+    text-decoration: none;
+  }
+  
+  #footer .icon a:hover {
+    background-color: #570000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
