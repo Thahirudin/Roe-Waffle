@@ -6,6 +6,23 @@
 @import "navbar";
 @import "carousel";
 
+// Define the number of iterations
+$numOfCards: 5;
+
+// Loop to generate CSS classes for cards
+@for $i from 1 through $numOfCards {
+  .card-#{$i} {
+    width: 200px;
+    height: 300px;
+    background-color: lighten(#800000, $i * 10%); // Incremental background color
+    margin: 10px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}
 * {
     padding: 0;
     margin: 0;
