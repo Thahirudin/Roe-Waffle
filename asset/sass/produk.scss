@@ -1,7 +1,11 @@
+@use 'variabel';
+@import "navbar";
+@import "carousel";
+
 * {
     padding: 0;
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: variabel.$main-font;
   }
   body {
     background-image: url("../../asset/img/background.png");
@@ -11,7 +15,7 @@
     height: 100vh;
   }
   .navbar {
-    background-color: #800000;
+    background-color: variabel.$navbar-background;
   }
   .navbar .dropdown-item:hover {
     color: #800000;
@@ -155,8 +159,8 @@
     }
   #footer .icon a {
     background-color: white;
-    width: 40px;
-    height: 40px;
+    width: variabel.$icon-size;
+      height: variabel.$icon-size;
     border-radius: 50%;
     display: flex;
     justify-content: center;
