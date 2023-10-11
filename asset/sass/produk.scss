@@ -1,3 +1,7 @@
+@function calculate-font-size($size) {
+  @return $size * 1px;
+}
+
 @use 'variabel';
 @import "navbar";
 @import "carousel";
